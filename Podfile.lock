@@ -1,0 +1,19 @@
+PODS:
+  - NerobluCore (1.0.0)
+
+DEPENDENCIES:
+  - NerobluCore (from `https://github.com/nakau1/NerobluCore.git`)
+
+EXTERNAL SOURCES:
+  NerobluCore:
+    :git: https://github.com/nakau1/NerobluCore.git
+
+CHECKOUT OPTIONS:
+  NerobluCore:
+    :commit: 223128436aff5317051dae606df0231bb91645c0
+    :git: https://github.com/nakau1/NerobluCore.git
+
+SPEC CHECKSUMS:
+  NerobluCore: d16c64ad2473a2ec249d70ab2a81fa8cead19675
+
+COCOAPODS: 0.39.0
