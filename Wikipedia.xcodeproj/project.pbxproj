@@ -15,6 +15,8 @@
 		CEE5FA301BDFC16C00D1624E /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE5FA2F1BDFC16C00D1624E /* AppViewController.swift */; };
 		CEE5FA361BDFC52300D1624E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE5FA341BDFC52300D1624E /* MainViewController.swift */; };
 		CEE5FA371BDFC52300D1624E /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEE5FA351BDFC52300D1624E /* MainViewController.xib */; };
+		CEE5FA3A1BDFC87600D1624E /* SandboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE5FA381BDFC87600D1624E /* SandboxViewController.swift */; };
+		CEE5FA3B1BDFC87600D1624E /* SandboxViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEE5FA391BDFC87600D1624E /* SandboxViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		CEE5FA2F1BDFC16C00D1624E /* AppViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppViewController.swift; path = Wikipedia/Classes/Bases/AppViewController.swift; sourceTree = "<group>"; };
 		CEE5FA341BDFC52300D1624E /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = Wikipedia/Classes/Schenes/Main/MainViewController.swift; sourceTree = "<group>"; };
 		CEE5FA351BDFC52300D1624E /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainViewController.xib; path = Wikipedia/Classes/Schenes/Main/MainViewController.xib; sourceTree = "<group>"; };
+		CEE5FA381BDFC87600D1624E /* SandboxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SandboxViewController.swift; path = Wikipedia/Classes/SandboxViewController.swift; sourceTree = "<group>"; };
+		CEE5FA391BDFC87600D1624E /* SandboxViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SandboxViewController.xib; path = Wikipedia/Classes/SandboxViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +92,8 @@
 		CEE5FA261BDFBFEF00D1624E /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				CEE5FA381BDFC87600D1624E /* SandboxViewController.swift */,
+				CEE5FA391BDFC87600D1624E /* SandboxViewController.xib */,
 				CEE5FA2E1BDFC14900D1624E /* Bases */,
 				CEE5FA281BDFC01A00D1624E /* Cores */,
 				CEE5FA271BDFC01200D1624E /* Scenes */,
@@ -198,6 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEA9FA4F1BDFBB9F00EA245A /* LaunchScreen.storyboard in Resources */,
+				CEE5FA3B1BDFC87600D1624E /* SandboxViewController.xib in Resources */,
 				CEA9FA4C1BDFBB9F00EA245A /* Assets.xcassets in Resources */,
 				CEA9FA4A1BDFBB9F00EA245A /* Main.storyboard in Resources */,
 				CEE5FA371BDFC52300D1624E /* MainViewController.xib in Resources */,
@@ -259,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEE5FA3A1BDFC87600D1624E /* SandboxViewController.swift in Sources */,
 				CEE5FA361BDFC52300D1624E /* MainViewController.swift in Sources */,
 				CEE5FA301BDFC16C00D1624E /* AppViewController.swift in Sources */,
 				CEE5FA2B1BDFC02800D1624E /* AppDelegate.swift in Sources */,
