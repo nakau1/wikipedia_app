@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1A7445D4495094A859C66B75 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60D43B841C5A46063BD23B7D /* Pods.framework */; };
+		CE4236D91BE06425009BB8D3 /* AppApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4236D81BE06425009BB8D3 /* AppApi.swift */; };
 		CEA9FA4A1BDFBB9F00EA245A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA9FA481BDFBB9F00EA245A /* Main.storyboard */; };
 		CEA9FA4C1BDFBB9F00EA245A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEA9FA4B1BDFBB9F00EA245A /* Assets.xcassets */; };
 		CEA9FA4F1BDFBB9F00EA245A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA9FA4D1BDFBB9F00EA245A /* LaunchScreen.storyboard */; };
@@ -21,6 +22,7 @@
 		21E7DC76BE66AFF67763D7E1 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		5B579CF7FBD0B3E9EEC53D0D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		60D43B841C5A46063BD23B7D /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE4236D81BE06425009BB8D3 /* AppApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppApi.swift; path = Wikipedia/Classes/API/AppApi.swift; sourceTree = "<group>"; };
 		CEA9FA411BDFBB9F00EA245A /* Wikipedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wikipedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEA9FA491BDFBB9F00EA245A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CEA9FA4B1BDFBB9F00EA245A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -52,6 +54,14 @@
 				21E7DC76BE66AFF67763D7E1 /* Pods.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		CE4236D71BE0640B009BB8D3 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				CE4236D81BE06425009BB8D3 /* AppApi.swift */,
+			);
+			name = API;
 			sourceTree = "<group>";
 		};
 		CEA9FA381BDFBB9F00EA245A = {
@@ -88,6 +98,7 @@
 		CEE5FA261BDFBFEF00D1624E /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				CE4236D71BE0640B009BB8D3 /* API */,
 				CEE5FA2E1BDFC14900D1624E /* Bases */,
 				CEE5FA281BDFC01A00D1624E /* Cores */,
 				CEE5FA271BDFC01200D1624E /* Scenes */,
@@ -261,6 +272,7 @@
 			files = (
 				CEE5FA361BDFC52300D1624E /* MainViewController.swift in Sources */,
 				CEE5FA301BDFC16C00D1624E /* AppViewController.swift in Sources */,
+				CE4236D91BE06425009BB8D3 /* AppApi.swift in Sources */,
 				CEE5FA2B1BDFC02800D1624E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
