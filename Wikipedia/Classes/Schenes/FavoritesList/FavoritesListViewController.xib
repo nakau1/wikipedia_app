@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FavoritesListViewController" customModule="Wikipedia" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="UeL-vk-SDm" id="BIg-f1-FQY"/>
+                <outlet property="view" destination="tUP-wl-igB" id="kMG-Ps-alU"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="tUP-wl-igB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UeL-vk-SDm">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="UeL-vk-SDm" secondAttribute="trailing" id="4g0-qY-3vU"/>
+                <constraint firstItem="UeL-vk-SDm" firstAttribute="top" secondItem="tUP-wl-igB" secondAttribute="top" id="4tc-Ko-QTt"/>
+                <constraint firstAttribute="bottom" secondItem="UeL-vk-SDm" secondAttribute="bottom" id="6O6-5c-yi0"/>
+                <constraint firstItem="UeL-vk-SDm" firstAttribute="leading" secondItem="tUP-wl-igB" secondAttribute="leading" id="IFS-xV-ole"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>
