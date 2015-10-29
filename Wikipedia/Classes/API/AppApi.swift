@@ -3,49 +3,7 @@
 // Copyright (C) 2015年 NeroBlu. All rights reserved.
 // =============================================================================
 import UIKit
-import Alamofire
-import SwiftyJSON
-
-///
-class NBApi {
-	
-	class func executeRequest<T: NBApiRequest>(request: T, completionHandler: (NBApiResponse)->Void = {r in}) {
-		let method = request.method
-		let urlString = "\(request.baseURL)\(request.endpoint)"
-		let parameters = request.parameters
-		
-		let alamofireRequest = Alamofire.request(method, urlString, parameters: parameters)
-		alamofireRequest.responseJSON() { response in
-			guard let result = response.result.value else {
-				return
-			}
-			let json = JSON(result)
-			
-			print(response.request?.URLString)
-			print(json.description)
-		}
-	}
-}
-
-typealias NBApiMethod = Alamofire.Method
-
-class NBApiRequest {
-	
-	var baseURL: String { get { return "" }}
-	
-	var endpoint: String { get { return "" }}
-	
-	var method: NBApiMethod { get { return .POST }}
-	
-	var parameters: [String : AnyObject] { get { return [:] }}
-}
-
-class NBApiResponse {
-	
-}
-
-
-
+import TemporaryLibrary
 
 class AppApi: NBApi {
 	
@@ -58,7 +16,7 @@ class AppApiRequest : NBApiRequest
 	
 	override var method: NBApiMethod { return .GET }
 	
-	override var parameters: [String : AnyObject] {
+	override var parameters: NBApiParameters {
 		var ret = super.parameters
 		ret["format"] = "json"
 		ret["action"] = "query"
@@ -79,7 +37,7 @@ extension AppApi
 				self.titles = titles
 			}
 			
-			override var parameters: [String : AnyObject] {
+			override var parameters: NBApiParameters {
 				var ret = super.parameters
 				ret["prop"]   = "info"
 				ret["titles"] = self.titles
@@ -96,7 +54,7 @@ extension AppApi
 				self.titles = titles
 			}
 			
-			override var parameters: [String : AnyObject] {
+			override var parameters: NBApiParameters {
 				var ret = super.parameters
 				ret["prop"]    = "revisions"
 				ret["rvprop"]  = "content"
@@ -119,7 +77,7 @@ extension AppApi
 				self.sroffset = sroffset
 			}
 			
-			override var parameters: [String : AnyObject] {
+			override var parameters: NBApiParameters {
 				var ret = super.parameters
 				ret["list"]     = "search"
 				ret["srsearch"] = self.srsearch
@@ -142,7 +100,7 @@ extension AppApi
 				self.bllimit  = bllimit
 			}
 			
-			override var parameters: [String : AnyObject] {
+			override var parameters: NBApiParameters {
 				var ret = super.parameters
 				ret["list"]    = "backlinks"
 				ret["bltitle"] = self.bltitle
