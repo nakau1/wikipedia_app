@@ -6,7 +6,7 @@ import UIKit
 import TemporaryLibrary
 
 /// アプリ内エンティティの基底クラス
-class AppEntity: NBEntity
+class AppEntity: NBJsonDecodableEntity
 {
 	
 }
