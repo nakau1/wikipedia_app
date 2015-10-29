@@ -6,3 +6,6 @@ use_frameworks!
 
 #swift
 pod 'NerobluCore', :git => 'https://github.com/nakau1/NerobluCore.git'
+
+pod 'Alamofire'
+pod 'SwiftyJSON', '~> 2.3'

@@ -14,6 +14,10 @@
 		CEAB67831BE233DE007207AA /* TemporaryLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = CEAB67821BE233DE007207AA /* TemporaryLibrary.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CEAB67871BE233DE007207AA /* TemporaryLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEAB67801BE233DE007207AA /* TemporaryLibrary.framework */; };
 		CEAB67881BE233DE007207AA /* TemporaryLibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CEAB67801BE233DE007207AA /* TemporaryLibrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CEAB67911BE2D3A0007207AA /* ArrticleEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB67901BE2D3A0007207AA /* ArrticleEntity.swift */; };
+		CEAB67931BE2D448007207AA /* NBEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB67921BE2D448007207AA /* NBEntity.swift */; };
+		CEAB67951BE2D620007207AA /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEAB67941BE2D620007207AA /* Pods.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		CEAB67971BE2D735007207AA /* AppEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB67961BE2D735007207AA /* AppEntity.swift */; };
 		CED28FF31BE22AAA00CFD90D /* FavoritesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED28FF11BE22AAA00CFD90D /* FavoritesListViewController.swift */; };
 		CED28FF41BE22AAA00CFD90D /* FavoritesListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED28FF21BE22AAA00CFD90D /* FavoritesListViewController.xib */; };
 		CED28FF71BE22AB700CFD90D /* HistoriesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED28FF51BE22AB700CFD90D /* HistoriesListViewController.swift */; };
@@ -64,6 +68,10 @@
 		CEAB67801BE233DE007207AA /* TemporaryLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TemporaryLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEAB67821BE233DE007207AA /* TemporaryLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TemporaryLibrary.h; sourceTree = "<group>"; };
 		CEAB67841BE233DE007207AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEAB67901BE2D3A0007207AA /* ArrticleEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArrticleEntity.swift; path = Wikipedia/Classes/Entities/ArrticleEntity.swift; sourceTree = "<group>"; };
+		CEAB67921BE2D448007207AA /* NBEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NBEntity.swift; sourceTree = "<group>"; };
+		CEAB67941BE2D620007207AA /* Pods.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods.framework; path = "Pods/../build/Debug-iphoneos/Pods.framework"; sourceTree = "<group>"; };
+		CEAB67961BE2D735007207AA /* AppEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppEntity.swift; path = Wikipedia/Classes/Bases/AppEntity.swift; sourceTree = "<group>"; };
 		CED28FF11BE22AAA00CFD90D /* FavoritesListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FavoritesListViewController.swift; path = Wikipedia/Classes/Schenes/FavoritesList/FavoritesListViewController.swift; sourceTree = "<group>"; };
 		CED28FF21BE22AAA00CFD90D /* FavoritesListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FavoritesListViewController.xib; path = Wikipedia/Classes/Schenes/FavoritesList/FavoritesListViewController.xib; sourceTree = "<group>"; };
 		CED28FF51BE22AB700CFD90D /* HistoriesListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistoriesListViewController.swift; path = Wikipedia/Classes/Schenes/HistoriesList/HistoriesListViewController.swift; sourceTree = "<group>"; };
@@ -93,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEAB67951BE2D620007207AA /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,10 +153,19 @@
 		CEAB67811BE233DE007207AA /* TemporaryLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				CEAB67921BE2D448007207AA /* NBEntity.swift */,
 				CEAB67821BE233DE007207AA /* TemporaryLibrary.h */,
 				CEAB67841BE233DE007207AA /* Info.plist */,
 			);
 			path = TemporaryLibrary;
+			sourceTree = "<group>";
+		};
+		CEAB678F1BE2D357007207AA /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				CEAB67901BE2D3A0007207AA /* ArrticleEntity.swift */,
+			);
+			name = Entities;
 			sourceTree = "<group>";
 		};
 		CED28FED1BE22A2A00CFD90D /* Setting */ = {
@@ -189,6 +207,7 @@
 		CEE5FA261BDFBFEF00D1624E /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				CEAB678F1BE2D357007207AA /* Entities */,
 				CEE5FA2E1BDFC14900D1624E /* Bases */,
 				CEE5FA281BDFC01A00D1624E /* Cores */,
 				CEE5FA271BDFC01200D1624E /* Scenes */,
@@ -219,6 +238,7 @@
 		CEE5FA2E1BDFC14900D1624E /* Bases */ = {
 			isa = PBXGroup;
 			children = (
+				CEAB67961BE2D735007207AA /* AppEntity.swift */,
 				CEE5FA2F1BDFC16C00D1624E /* AppViewController.swift */,
 			);
 			name = Bases;
@@ -236,6 +256,7 @@
 		E07371E26EB26132316F3A7E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CEAB67941BE2D620007207AA /* Pods.framework */,
 				60D43B841C5A46063BD23B7D /* Pods.framework */,
 			);
 			name = Frameworks;
@@ -410,6 +431,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEAB67971BE2D735007207AA /* AppEntity.swift in Sources */,
+				CEAB67911BE2D3A0007207AA /* ArrticleEntity.swift in Sources */,
 				CEE5FA361BDFC52300D1624E /* MainViewController.swift in Sources */,
 				CED28FF71BE22AB700CFD90D /* HistoriesListViewController.swift in Sources */,
 				CEE5FA301BDFC16C00D1624E /* AppViewController.swift in Sources */,
@@ -424,6 +447,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEAB67931BE2D448007207AA /* NBEntity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -544,6 +568,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Wikipedia/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.neroblu.wikipedia;
@@ -559,6 +584,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Wikipedia/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.neroblu.wikipedia;
@@ -570,17 +596,23 @@
 		CEAB67891BE233DE007207AA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = TemporaryLibrary/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.neroblu.TemporaryLibrary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -590,11 +622,16 @@
 		CEAB678A1BE233DE007207AA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = TemporaryLibrary/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -635,6 +672,7 @@
 				CEAB678A1BE233DE007207AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
