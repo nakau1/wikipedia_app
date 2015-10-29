@@ -5,8 +5,9 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="Wikipedia" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MenuViewController" customModule="Wikipedia" customModuleProvider="target">
             <connections>
+                <outlet property="tableView" destination="5p1-bG-krQ" id="ANt-wL-Zki"/>
                 <outlet property="view" destination="iN0-l3-epB" id="89S-Xz-1pV"/>
             </connections>
         </placeholder>
@@ -15,18 +16,18 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fi1-4T-2RK">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5p1-bG-krQ">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
-                    <color key="backgroundColor" red="0.50588235290000005" green="0.55294117649999996" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
-                </webView>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
             </subviews>
             <animations/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="fi1-4T-2RK" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="5co-Td-KjX"/>
-                <constraint firstAttribute="bottom" secondItem="fi1-4T-2RK" secondAttribute="bottom" id="BGn-AC-Bvn"/>
-                <constraint firstItem="fi1-4T-2RK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="rJf-6b-MzR"/>
-                <constraint firstAttribute="trailing" secondItem="fi1-4T-2RK" secondAttribute="trailing" id="xsI-ub-iYh"/>
+                <constraint firstAttribute="bottom" secondItem="5p1-bG-krQ" secondAttribute="bottom" id="Or2-Cu-jLx"/>
+                <constraint firstAttribute="trailing" secondItem="5p1-bG-krQ" secondAttribute="trailing" id="ejp-2H-Wjf"/>
+                <constraint firstItem="5p1-bG-krQ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="rn7-mr-0bo"/>
+                <constraint firstItem="5p1-bG-krQ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="xPG-d8-HyK"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
         </view>

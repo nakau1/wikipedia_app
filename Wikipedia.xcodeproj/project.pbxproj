@@ -11,6 +11,14 @@
 		CEA9FA4A1BDFBB9F00EA245A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA9FA481BDFBB9F00EA245A /* Main.storyboard */; };
 		CEA9FA4C1BDFBB9F00EA245A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEA9FA4B1BDFBB9F00EA245A /* Assets.xcassets */; };
 		CEA9FA4F1BDFBB9F00EA245A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA9FA4D1BDFBB9F00EA245A /* LaunchScreen.storyboard */; };
+		CED28FF31BE22AAA00CFD90D /* FavoritesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED28FF11BE22AAA00CFD90D /* FavoritesListViewController.swift */; };
+		CED28FF41BE22AAA00CFD90D /* FavoritesListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED28FF21BE22AAA00CFD90D /* FavoritesListViewController.xib */; };
+		CED28FF71BE22AB700CFD90D /* HistoriesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED28FF51BE22AB700CFD90D /* HistoriesListViewController.swift */; };
+		CED28FF81BE22AB700CFD90D /* HistoriesListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED28FF61BE22AB700CFD90D /* HistoriesListViewController.xib */; };
+		CED28FFB1BE22AC600CFD90D /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED28FF91BE22AC600CFD90D /* SettingViewController.swift */; };
+		CED28FFC1BE22AC600CFD90D /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED28FFA1BE22AC600CFD90D /* SettingViewController.xib */; };
+		CED28FFF1BE22AD000CFD90D /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED28FFD1BE22AD000CFD90D /* MenuViewController.swift */; };
+		CED290001BE22AD000CFD90D /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED28FFE1BE22AD000CFD90D /* MenuViewController.xib */; };
 		CEE5FA2B1BDFC02800D1624E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE5FA2A1BDFC02800D1624E /* AppDelegate.swift */; };
 		CEE5FA301BDFC16C00D1624E /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE5FA2F1BDFC16C00D1624E /* AppViewController.swift */; };
 		CEE5FA361BDFC52300D1624E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE5FA341BDFC52300D1624E /* MainViewController.swift */; };
@@ -26,6 +34,14 @@
 		CEA9FA4B1BDFBB9F00EA245A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEA9FA4E1BDFBB9F00EA245A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEA9FA501BDFBB9F00EA245A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CED28FF11BE22AAA00CFD90D /* FavoritesListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FavoritesListViewController.swift; path = Wikipedia/Classes/Schenes/FavoritesList/FavoritesListViewController.swift; sourceTree = "<group>"; };
+		CED28FF21BE22AAA00CFD90D /* FavoritesListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FavoritesListViewController.xib; path = Wikipedia/Classes/Schenes/FavoritesList/FavoritesListViewController.xib; sourceTree = "<group>"; };
+		CED28FF51BE22AB700CFD90D /* HistoriesListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistoriesListViewController.swift; path = Wikipedia/Classes/Schenes/HistoriesList/HistoriesListViewController.swift; sourceTree = "<group>"; };
+		CED28FF61BE22AB700CFD90D /* HistoriesListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HistoriesListViewController.xib; path = Wikipedia/Classes/Schenes/HistoriesList/HistoriesListViewController.xib; sourceTree = "<group>"; };
+		CED28FF91BE22AC600CFD90D /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingViewController.swift; path = Wikipedia/Classes/Schenes/Setting/SettingViewController.swift; sourceTree = "<group>"; };
+		CED28FFA1BE22AC600CFD90D /* SettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SettingViewController.xib; path = Wikipedia/Classes/Schenes/Setting/SettingViewController.xib; sourceTree = "<group>"; };
+		CED28FFD1BE22AD000CFD90D /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuViewController.swift; path = Wikipedia/Classes/Schenes/Menu/MenuViewController.swift; sourceTree = "<group>"; };
+		CED28FFE1BE22AD000CFD90D /* MenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MenuViewController.xib; path = Wikipedia/Classes/Schenes/Menu/MenuViewController.xib; sourceTree = "<group>"; };
 		CEE5FA291BDFC02700D1624E /* Wikipedia-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Wikipedia-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		CEE5FA2A1BDFC02800D1624E /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Wikipedia/Classes/Cores/AppDelegate.swift; sourceTree = "<group>"; };
 		CEE5FA2F1BDFC16C00D1624E /* AppViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppViewController.swift; path = Wikipedia/Classes/Bases/AppViewController.swift; sourceTree = "<group>"; };
@@ -85,6 +101,42 @@
 			path = Wikipedia;
 			sourceTree = "<group>";
 		};
+		CED28FED1BE22A2A00CFD90D /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				CED28FF91BE22AC600CFD90D /* SettingViewController.swift */,
+				CED28FFA1BE22AC600CFD90D /* SettingViewController.xib */,
+			);
+			name = Setting;
+			sourceTree = "<group>";
+		};
+		CED28FEE1BE22A3600CFD90D /* FavoritesList */ = {
+			isa = PBXGroup;
+			children = (
+				CED28FF11BE22AAA00CFD90D /* FavoritesListViewController.swift */,
+				CED28FF21BE22AAA00CFD90D /* FavoritesListViewController.xib */,
+			);
+			name = FavoritesList;
+			sourceTree = "<group>";
+		};
+		CED28FEF1BE22A4900CFD90D /* HistoriesList */ = {
+			isa = PBXGroup;
+			children = (
+				CED28FF51BE22AB700CFD90D /* HistoriesListViewController.swift */,
+				CED28FF61BE22AB700CFD90D /* HistoriesListViewController.xib */,
+			);
+			name = HistoriesList;
+			sourceTree = "<group>";
+		};
+		CED28FF01BE22A7300CFD90D /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				CED28FFD1BE22AD000CFD90D /* MenuViewController.swift */,
+				CED28FFE1BE22AD000CFD90D /* MenuViewController.xib */,
+			);
+			name = Menu;
+			sourceTree = "<group>";
+		};
 		CEE5FA261BDFBFEF00D1624E /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +151,10 @@
 			isa = PBXGroup;
 			children = (
 				CEE5FA331BDFC4DE00D1624E /* Main */,
+				CED28FF01BE22A7300CFD90D /* Menu */,
+				CED28FED1BE22A2A00CFD90D /* Setting */,
+				CED28FEF1BE22A4900CFD90D /* HistoriesList */,
+				CED28FEE1BE22A3600CFD90D /* FavoritesList */,
 			);
 			name = Scenes;
 			sourceTree = "<group>";
@@ -197,9 +253,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CED28FFC1BE22AC600CFD90D /* SettingViewController.xib in Resources */,
 				CEA9FA4F1BDFBB9F00EA245A /* LaunchScreen.storyboard in Resources */,
+				CED28FF81BE22AB700CFD90D /* HistoriesListViewController.xib in Resources */,
+				CED290001BE22AD000CFD90D /* MenuViewController.xib in Resources */,
 				CEA9FA4C1BDFBB9F00EA245A /* Assets.xcassets in Resources */,
 				CEA9FA4A1BDFBB9F00EA245A /* Main.storyboard in Resources */,
+				CED28FF41BE22AAA00CFD90D /* FavoritesListViewController.xib in Resources */,
 				CEE5FA371BDFC52300D1624E /* MainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,8 +320,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEE5FA361BDFC52300D1624E /* MainViewController.swift in Sources */,
+				CED28FF71BE22AB700CFD90D /* HistoriesListViewController.swift in Sources */,
 				CEE5FA301BDFC16C00D1624E /* AppViewController.swift in Sources */,
+				CED28FFF1BE22AD000CFD90D /* MenuViewController.swift in Sources */,
+				CED28FF31BE22AAA00CFD90D /* FavoritesListViewController.swift in Sources */,
 				CEE5FA2B1BDFC02800D1624E /* AppDelegate.swift in Sources */,
+				CED28FFB1BE22AC600CFD90D /* SettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
