@@ -1,12 +1,8 @@
 PODS:
-  - Alamofire (3.1.0)
   - NerobluCore (1.0.0)
-  - SwiftyJSON (2.3.1)
 
 DEPENDENCIES:
-  - Alamofire
   - NerobluCore (from `https://github.com/nakau1/NerobluCore.git`)
-  - SwiftyJSON (~> 2.3)
 
 EXTERNAL SOURCES:
   NerobluCore:
@@ -18,8 +14,6 @@ CHECKOUT OPTIONS:
     :git: https://github.com/nakau1/NerobluCore.git
 
 SPEC CHECKSUMS:
-  Alamofire: 415bd7f56197722978759078486689f7ef913dce
   NerobluCore: d16c64ad2473a2ec249d70ab2a81fa8cead19675
-  SwiftyJSON: 592b53bee5ef3dd9b3bebc6b9cb7ee35426ae8c3
 
 COCOAPODS: 0.39.0
