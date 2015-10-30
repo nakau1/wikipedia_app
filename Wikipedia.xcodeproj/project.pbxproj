@@ -18,6 +18,12 @@
 		CEAB67931BE2D448007207AA /* NBEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB67921BE2D448007207AA /* NBEntity.swift */; };
 		CEAB67951BE2D620007207AA /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEAB67941BE2D620007207AA /* Pods.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		CEAB67971BE2D735007207AA /* AppEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB67961BE2D735007207AA /* AppEntity.swift */; };
+		CEAB679C1BE2E2C7007207AA /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB67981BE2E2C7007207AA /* AppColor.swift */; };
+		CEAB679D1BE2E2C7007207AA /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB67991BE2E2C7007207AA /* AppConfig.swift */; };
+		CEAB679E1BE2E2C7007207AA /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB679A1BE2E2C7007207AA /* AppConstants.swift */; };
+		CEAB679F1BE2E2C7007207AA /* AppString.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB679B1BE2E2C7007207AA /* AppString.swift */; };
+		CEAB67A11BE2E3AA007207AA /* AppCommons.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB67A01BE2E3AA007207AA /* AppCommons.swift */; };
+		CEAB67A31BE2E41B007207AA /* AppImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB67A21BE2E41B007207AA /* AppImage.swift */; };
 		CED28FF31BE22AAA00CFD90D /* FavoritesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED28FF11BE22AAA00CFD90D /* FavoritesListViewController.swift */; };
 		CED28FF41BE22AAA00CFD90D /* FavoritesListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED28FF21BE22AAA00CFD90D /* FavoritesListViewController.xib */; };
 		CED28FF71BE22AB700CFD90D /* HistoriesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED28FF51BE22AB700CFD90D /* HistoriesListViewController.swift */; };
@@ -72,6 +78,12 @@
 		CEAB67921BE2D448007207AA /* NBEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NBEntity.swift; sourceTree = "<group>"; };
 		CEAB67941BE2D620007207AA /* Pods.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods.framework; path = "Pods/../build/Debug-iphoneos/Pods.framework"; sourceTree = "<group>"; };
 		CEAB67961BE2D735007207AA /* AppEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppEntity.swift; path = Wikipedia/Classes/Bases/AppEntity.swift; sourceTree = "<group>"; };
+		CEAB67981BE2E2C7007207AA /* AppColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppColor.swift; path = Wikipedia/Classes/Cores/AppColor.swift; sourceTree = "<group>"; };
+		CEAB67991BE2E2C7007207AA /* AppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppConfig.swift; path = Wikipedia/Classes/Cores/AppConfig.swift; sourceTree = "<group>"; };
+		CEAB679A1BE2E2C7007207AA /* AppConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppConstants.swift; path = Wikipedia/Classes/Cores/AppConstants.swift; sourceTree = "<group>"; };
+		CEAB679B1BE2E2C7007207AA /* AppString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppString.swift; path = Wikipedia/Classes/Cores/AppString.swift; sourceTree = "<group>"; };
+		CEAB67A01BE2E3AA007207AA /* AppCommons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppCommons.swift; path = Wikipedia/Classes/Cores/AppCommons.swift; sourceTree = "<group>"; };
+		CEAB67A21BE2E41B007207AA /* AppImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppImage.swift; path = Wikipedia/Classes/Cores/AppImage.swift; sourceTree = "<group>"; };
 		CED28FF11BE22AAA00CFD90D /* FavoritesListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FavoritesListViewController.swift; path = Wikipedia/Classes/Schenes/FavoritesList/FavoritesListViewController.swift; sourceTree = "<group>"; };
 		CED28FF21BE22AAA00CFD90D /* FavoritesListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FavoritesListViewController.xib; path = Wikipedia/Classes/Schenes/FavoritesList/FavoritesListViewController.xib; sourceTree = "<group>"; };
 		CED28FF51BE22AB700CFD90D /* HistoriesListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistoriesListViewController.swift; path = Wikipedia/Classes/Schenes/HistoriesList/HistoriesListViewController.swift; sourceTree = "<group>"; };
@@ -231,6 +243,12 @@
 			isa = PBXGroup;
 			children = (
 				CEE5FA2A1BDFC02800D1624E /* AppDelegate.swift */,
+				CEAB67981BE2E2C7007207AA /* AppColor.swift */,
+				CEAB67991BE2E2C7007207AA /* AppConfig.swift */,
+				CEAB67A01BE2E3AA007207AA /* AppCommons.swift */,
+				CEAB679A1BE2E2C7007207AA /* AppConstants.swift */,
+				CEAB67A21BE2E41B007207AA /* AppImage.swift */,
+				CEAB679B1BE2E2C7007207AA /* AppString.swift */,
 			);
 			name = Cores;
 			sourceTree = "<group>";
@@ -432,14 +450,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEAB67971BE2D735007207AA /* AppEntity.swift in Sources */,
+				CEAB679F1BE2E2C7007207AA /* AppString.swift in Sources */,
+				CEAB679C1BE2E2C7007207AA /* AppColor.swift in Sources */,
+				CEAB679D1BE2E2C7007207AA /* AppConfig.swift in Sources */,
 				CEAB67911BE2D3A0007207AA /* ArrticleEntity.swift in Sources */,
 				CEE5FA361BDFC52300D1624E /* MainViewController.swift in Sources */,
 				CED28FF71BE22AB700CFD90D /* HistoriesListViewController.swift in Sources */,
 				CEE5FA301BDFC16C00D1624E /* AppViewController.swift in Sources */,
+				CEAB679E1BE2E2C7007207AA /* AppConstants.swift in Sources */,
 				CED28FFF1BE22AD000CFD90D /* MenuViewController.swift in Sources */,
+				CEAB67A11BE2E3AA007207AA /* AppCommons.swift in Sources */,
 				CED28FF31BE22AAA00CFD90D /* FavoritesListViewController.swift in Sources */,
 				CEE5FA2B1BDFC02800D1624E /* AppDelegate.swift in Sources */,
 				CED28FFB1BE22AC600CFD90D /* SettingViewController.swift in Sources */,
+				CEAB67A31BE2E41B007207AA /* AppImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
