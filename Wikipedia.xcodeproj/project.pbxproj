@@ -18,6 +18,7 @@
 		CEAB67931BE2D448007207AA /* NBEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB67921BE2D448007207AA /* NBEntity.swift */; };
 		CEAB67951BE2D620007207AA /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEAB67941BE2D620007207AA /* Pods.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		CEAB67971BE2D735007207AA /* AppEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB67961BE2D735007207AA /* AppEntity.swift */; };
+		CEAB67A51BE2EC21007207AA /* NBLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB67A41BE2EC21007207AA /* NBLog.swift */; };
 		CEAB679C1BE2E2C7007207AA /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB67981BE2E2C7007207AA /* AppColor.swift */; };
 		CEAB679D1BE2E2C7007207AA /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB67991BE2E2C7007207AA /* AppConfig.swift */; };
 		CEAB679E1BE2E2C7007207AA /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB679A1BE2E2C7007207AA /* AppConstants.swift */; };
@@ -78,6 +79,7 @@
 		CEAB67921BE2D448007207AA /* NBEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NBEntity.swift; sourceTree = "<group>"; };
 		CEAB67941BE2D620007207AA /* Pods.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods.framework; path = "Pods/../build/Debug-iphoneos/Pods.framework"; sourceTree = "<group>"; };
 		CEAB67961BE2D735007207AA /* AppEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppEntity.swift; path = Wikipedia/Classes/Bases/AppEntity.swift; sourceTree = "<group>"; };
+		CEAB67A41BE2EC21007207AA /* NBLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NBLog.swift; sourceTree = "<group>"; };
 		CEAB67981BE2E2C7007207AA /* AppColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppColor.swift; path = Wikipedia/Classes/Cores/AppColor.swift; sourceTree = "<group>"; };
 		CEAB67991BE2E2C7007207AA /* AppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppConfig.swift; path = Wikipedia/Classes/Cores/AppConfig.swift; sourceTree = "<group>"; };
 		CEAB679A1BE2E2C7007207AA /* AppConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppConstants.swift; path = Wikipedia/Classes/Cores/AppConstants.swift; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				CEAB67921BE2D448007207AA /* NBEntity.swift */,
+				CEAB67A41BE2EC21007207AA /* NBLog.swift */,
 				CEAB67821BE233DE007207AA /* TemporaryLibrary.h */,
 				CEAB67841BE233DE007207AA /* Info.plist */,
 			);
@@ -346,6 +349,7 @@
 				TargetAttributes = {
 					CEA9FA401BDFBB9F00EA245A = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = MLK6HQFJ3K;
 					};
 					CEAB677F1BE233DE007207AA = {
 						CreatedOnToolsVersion = 7.1;
@@ -471,6 +475,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEAB67A51BE2EC21007207AA /* NBLog.swift in Sources */,
 				CEAB67931BE2D448007207AA /* NBEntity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -541,7 +546,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -579,7 +584,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -592,8 +597,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Wikipedia/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.neroblu.wikipedia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -608,8 +615,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Wikipedia/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.neroblu.wikipedia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -632,6 +641,7 @@
 				);
 				INFOPLIST_FILE = TemporaryLibrary/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.neroblu.TemporaryLibrary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -658,6 +668,7 @@
 				);
 				INFOPLIST_FILE = TemporaryLibrary/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.neroblu.TemporaryLibrary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
