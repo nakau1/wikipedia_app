@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		1A7445D4495094A859C66B75 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60D43B841C5A46063BD23B7D /* Pods.framework */; };
+		CE2057691BE2601E0043D339 /* NBApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2057681BE2601E0043D339 /* NBApi.swift */; };
+		CE20576C1BE260A90043D339 /* NBApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE20576A1BE260A90043D339 /* NBApiRequest.swift */; };
+		CE20576D1BE260A90043D339 /* NBApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE20576B1BE260A90043D339 /* NBApiResponse.swift */; };
+		CE4236D91BE06425009BB8D3 /* AppApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4236D81BE06425009BB8D3 /* AppApi.swift */; };
 		CEA9FA4A1BDFBB9F00EA245A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA9FA481BDFBB9F00EA245A /* Main.storyboard */; };
 		CEA9FA4C1BDFBB9F00EA245A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEA9FA4B1BDFBB9F00EA245A /* Assets.xcassets */; };
 		CEA9FA4F1BDFBB9F00EA245A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA9FA4D1BDFBB9F00EA245A /* LaunchScreen.storyboard */; };
@@ -18,13 +22,13 @@
 		CEAB67931BE2D448007207AA /* NBEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB67921BE2D448007207AA /* NBEntity.swift */; };
 		CEAB67951BE2D620007207AA /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEAB67941BE2D620007207AA /* Pods.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		CEAB67971BE2D735007207AA /* AppEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB67961BE2D735007207AA /* AppEntity.swift */; };
-		CEAB67A51BE2EC21007207AA /* NBLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB67A41BE2EC21007207AA /* NBLog.swift */; };
 		CEAB679C1BE2E2C7007207AA /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB67981BE2E2C7007207AA /* AppColor.swift */; };
 		CEAB679D1BE2E2C7007207AA /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB67991BE2E2C7007207AA /* AppConfig.swift */; };
 		CEAB679E1BE2E2C7007207AA /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB679A1BE2E2C7007207AA /* AppConstants.swift */; };
 		CEAB679F1BE2E2C7007207AA /* AppString.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB679B1BE2E2C7007207AA /* AppString.swift */; };
 		CEAB67A11BE2E3AA007207AA /* AppCommons.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB67A01BE2E3AA007207AA /* AppCommons.swift */; };
 		CEAB67A31BE2E41B007207AA /* AppImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB67A21BE2E41B007207AA /* AppImage.swift */; };
+		CEAB67A51BE2EC21007207AA /* NBLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB67A41BE2EC21007207AA /* NBLog.swift */; };
 		CED28FF31BE22AAA00CFD90D /* FavoritesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED28FF11BE22AAA00CFD90D /* FavoritesListViewController.swift */; };
 		CED28FF41BE22AAA00CFD90D /* FavoritesListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED28FF21BE22AAA00CFD90D /* FavoritesListViewController.xib */; };
 		CED28FF71BE22AB700CFD90D /* HistoriesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED28FF51BE22AB700CFD90D /* HistoriesListViewController.swift */; };
@@ -67,6 +71,10 @@
 		21E7DC76BE66AFF67763D7E1 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		5B579CF7FBD0B3E9EEC53D0D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		60D43B841C5A46063BD23B7D /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE2057681BE2601E0043D339 /* NBApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NBApi.swift; sourceTree = "<group>"; };
+		CE20576A1BE260A90043D339 /* NBApiRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NBApiRequest.swift; sourceTree = "<group>"; };
+		CE20576B1BE260A90043D339 /* NBApiResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NBApiResponse.swift; sourceTree = "<group>"; };
+		CE4236D81BE06425009BB8D3 /* AppApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppApi.swift; path = Wikipedia/Classes/API/AppApi.swift; sourceTree = "<group>"; };
 		CEA9FA411BDFBB9F00EA245A /* Wikipedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wikipedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEA9FA491BDFBB9F00EA245A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CEA9FA4B1BDFBB9F00EA245A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -79,13 +87,13 @@
 		CEAB67921BE2D448007207AA /* NBEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NBEntity.swift; sourceTree = "<group>"; };
 		CEAB67941BE2D620007207AA /* Pods.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods.framework; path = "Pods/../build/Debug-iphoneos/Pods.framework"; sourceTree = "<group>"; };
 		CEAB67961BE2D735007207AA /* AppEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppEntity.swift; path = Wikipedia/Classes/Bases/AppEntity.swift; sourceTree = "<group>"; };
-		CEAB67A41BE2EC21007207AA /* NBLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NBLog.swift; sourceTree = "<group>"; };
 		CEAB67981BE2E2C7007207AA /* AppColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppColor.swift; path = Wikipedia/Classes/Cores/AppColor.swift; sourceTree = "<group>"; };
 		CEAB67991BE2E2C7007207AA /* AppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppConfig.swift; path = Wikipedia/Classes/Cores/AppConfig.swift; sourceTree = "<group>"; };
 		CEAB679A1BE2E2C7007207AA /* AppConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppConstants.swift; path = Wikipedia/Classes/Cores/AppConstants.swift; sourceTree = "<group>"; };
 		CEAB679B1BE2E2C7007207AA /* AppString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppString.swift; path = Wikipedia/Classes/Cores/AppString.swift; sourceTree = "<group>"; };
 		CEAB67A01BE2E3AA007207AA /* AppCommons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppCommons.swift; path = Wikipedia/Classes/Cores/AppCommons.swift; sourceTree = "<group>"; };
 		CEAB67A21BE2E41B007207AA /* AppImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppImage.swift; path = Wikipedia/Classes/Cores/AppImage.swift; sourceTree = "<group>"; };
+		CEAB67A41BE2EC21007207AA /* NBLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NBLog.swift; sourceTree = "<group>"; };
 		CED28FF11BE22AAA00CFD90D /* FavoritesListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FavoritesListViewController.swift; path = Wikipedia/Classes/Schenes/FavoritesList/FavoritesListViewController.swift; sourceTree = "<group>"; };
 		CED28FF21BE22AAA00CFD90D /* FavoritesListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FavoritesListViewController.xib; path = Wikipedia/Classes/Schenes/FavoritesList/FavoritesListViewController.xib; sourceTree = "<group>"; };
 		CED28FF51BE22AB700CFD90D /* HistoriesListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistoriesListViewController.swift; path = Wikipedia/Classes/Schenes/HistoriesList/HistoriesListViewController.swift; sourceTree = "<group>"; };
@@ -131,6 +139,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		CE4236D71BE0640B009BB8D3 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				CE4236D81BE06425009BB8D3 /* AppApi.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
 		CEA9FA381BDFBB9F00EA245A = {
 			isa = PBXGroup;
 			children = (
@@ -171,6 +187,9 @@
 				CEAB67A41BE2EC21007207AA /* NBLog.swift */,
 				CEAB67821BE233DE007207AA /* TemporaryLibrary.h */,
 				CEAB67841BE233DE007207AA /* Info.plist */,
+				CE2057681BE2601E0043D339 /* NBApi.swift */,
+				CE20576A1BE260A90043D339 /* NBApiRequest.swift */,
+				CE20576B1BE260A90043D339 /* NBApiResponse.swift */,
 			);
 			path = TemporaryLibrary;
 			sourceTree = "<group>";
@@ -222,6 +241,7 @@
 		CEE5FA261BDFBFEF00D1624E /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				CE4236D71BE0640B009BB8D3 /* API */,
 				CEAB678F1BE2D357007207AA /* Entities */,
 				CEE5FA2E1BDFC14900D1624E /* Bases */,
 				CEE5FA281BDFC01A00D1624E /* Cores */,
@@ -461,6 +481,7 @@
 				CEE5FA361BDFC52300D1624E /* MainViewController.swift in Sources */,
 				CED28FF71BE22AB700CFD90D /* HistoriesListViewController.swift in Sources */,
 				CEE5FA301BDFC16C00D1624E /* AppViewController.swift in Sources */,
+				CE4236D91BE06425009BB8D3 /* AppApi.swift in Sources */,
 				CEAB679E1BE2E2C7007207AA /* AppConstants.swift in Sources */,
 				CED28FFF1BE22AD000CFD90D /* MenuViewController.swift in Sources */,
 				CEAB67A11BE2E3AA007207AA /* AppCommons.swift in Sources */,
@@ -475,6 +496,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE20576C1BE260A90043D339 /* NBApiRequest.swift in Sources */,
+				CE2057691BE2601E0043D339 /* NBApi.swift in Sources */,
+				CE20576D1BE260A90043D339 /* NBApiResponse.swift in Sources */,
 				CEAB67A51BE2EC21007207AA /* NBLog.swift in Sources */,
 				CEAB67931BE2D448007207AA /* NBEntity.swift in Sources */,
 			);
@@ -635,10 +659,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/build/Debug-iphoneos",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = TemporaryLibrary/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -662,10 +683,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/build/Debug-iphoneos",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = TemporaryLibrary/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
