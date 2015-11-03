@@ -5,13 +5,8 @@
 import UIKit
 import TemporaryLibrary
 
-/// メイン画面ビューコントローラ
-class MainViewController: AppViewController
+/// アプリ内エンティティの基底クラス
+class AppEntity: NBJsonDecodableEntity
 {
-	typealias H = (String)->Void
 	
-	override func viewDidLoad()
-	{
-		super.viewDidLoad()
-	}
 }

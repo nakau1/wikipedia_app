@@ -3,15 +3,10 @@
 // Copyright (C) 2015年 NeroBlu. All rights reserved.
 // =============================================================================
 import UIKit
-import TemporaryLibrary
 
-/// メイン画面ビューコントローラ
-class MainViewController: AppViewController
+/// アプリ設定値(サービスのアカウント情報等)
+class AppConfig
 {
-	typealias H = (String)->Void
 	
-	override func viewDidLoad()
-	{
-		super.viewDidLoad()
-	}
 }
+

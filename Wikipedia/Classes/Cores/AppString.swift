@@ -3,15 +3,11 @@
 // Copyright (C) 2015年 NeroBlu. All rights reserved.
 // =============================================================================
 import UIKit
-import TemporaryLibrary
 
-/// メイン画面ビューコントローラ
-class MainViewController: AppViewController
+/// アプリ内で使用する文字列の定義
+class AppString
 {
-	typealias H = (String)->Void
-	
-	override func viewDidLoad()
-	{
-		super.viewDidLoad()
+	class Error {
+		static let Network = "ネットワークに接続できません"
 	}
 }
