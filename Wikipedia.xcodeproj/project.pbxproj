@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		1A7445D4495094A859C66B75 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60D43B841C5A46063BD23B7D /* Pods.framework */; };
-		CE2057691BE2601E0043D339 /* NBApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2057681BE2601E0043D339 /* NBApi.swift */; };
-		CE20576C1BE260A90043D339 /* NBApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE20576A1BE260A90043D339 /* NBApiRequest.swift */; };
-		CE20576D1BE260A90043D339 /* NBApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE20576B1BE260A90043D339 /* NBApiResponse.swift */; };
-		CE3767D51BE9D5500069055F /* NBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3767D41BE9D5500069055F /* NBViewController.swift */; };
-		CE3767D71BE9D6340069055F /* NBNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3767D61BE9D6340069055F /* NBNotification.swift */; };
+		CE3767E31BE9E4160069055F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE3767D81BE9E4160069055F /* Info.plist */; };
+		CE3767E41BE9E4160069055F /* NBActionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3767D91BE9E4160069055F /* NBActionSheet.swift */; };
+		CE3767E51BE9E4160069055F /* NBAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3767DA1BE9E4160069055F /* NBAlert.swift */; };
+		CE3767E61BE9E4160069055F /* NBApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3767DB1BE9E4160069055F /* NBApi.swift */; };
+		CE3767E71BE9E4160069055F /* NBApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3767DC1BE9E4160069055F /* NBApiRequest.swift */; };
+		CE3767E81BE9E4160069055F /* NBApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3767DD1BE9E4160069055F /* NBApiResponse.swift */; };
+		CE3767E91BE9E4160069055F /* NBEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3767DE1BE9E4160069055F /* NBEntity.swift */; };
+		CE3767EA1BE9E4160069055F /* NBLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3767DF1BE9E4160069055F /* NBLog.swift */; };
+		CE3767EB1BE9E4160069055F /* NBNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3767E01BE9E4160069055F /* NBNotification.swift */; };
+		CE3767EC1BE9E4160069055F /* NBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3767E11BE9E4160069055F /* NBViewController.swift */; };
+		CE3767ED1BE9E4160069055F /* TemporaryLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = CE3767E21BE9E4160069055F /* TemporaryLibrary.h */; };
 		CE4236D91BE06425009BB8D3 /* AppApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4236D81BE06425009BB8D3 /* AppApi.swift */; };
 		CEA9FA4A1BDFBB9F00EA245A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA9FA481BDFBB9F00EA245A /* Main.storyboard */; };
 		CEA9FA4C1BDFBB9F00EA245A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEA9FA4B1BDFBB9F00EA245A /* Assets.xcassets */; };
 		CEA9FA4F1BDFBB9F00EA245A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA9FA4D1BDFBB9F00EA245A /* LaunchScreen.storyboard */; };
-		CEAB67831BE233DE007207AA /* TemporaryLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = CEAB67821BE233DE007207AA /* TemporaryLibrary.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CEAB67871BE233DE007207AA /* TemporaryLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEAB67801BE233DE007207AA /* TemporaryLibrary.framework */; };
 		CEAB67881BE233DE007207AA /* TemporaryLibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CEAB67801BE233DE007207AA /* TemporaryLibrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CEAB67911BE2D3A0007207AA /* ArrticleEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB67901BE2D3A0007207AA /* ArrticleEntity.swift */; };
-		CEAB67931BE2D448007207AA /* NBEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB67921BE2D448007207AA /* NBEntity.swift */; };
 		CEAB67951BE2D620007207AA /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEAB67941BE2D620007207AA /* Pods.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		CEAB67971BE2D735007207AA /* AppEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB67961BE2D735007207AA /* AppEntity.swift */; };
 		CEAB679C1BE2E2C7007207AA /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB67981BE2E2C7007207AA /* AppColor.swift */; };
@@ -30,7 +34,6 @@
 		CEAB679F1BE2E2C7007207AA /* AppString.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB679B1BE2E2C7007207AA /* AppString.swift */; };
 		CEAB67A11BE2E3AA007207AA /* AppCommons.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB67A01BE2E3AA007207AA /* AppCommons.swift */; };
 		CEAB67A31BE2E41B007207AA /* AppImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB67A21BE2E41B007207AA /* AppImage.swift */; };
-		CEAB67A51BE2EC21007207AA /* NBLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB67A41BE2EC21007207AA /* NBLog.swift */; };
 		CED28FF31BE22AAA00CFD90D /* FavoritesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED28FF11BE22AAA00CFD90D /* FavoritesListViewController.swift */; };
 		CED28FF41BE22AAA00CFD90D /* FavoritesListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED28FF21BE22AAA00CFD90D /* FavoritesListViewController.xib */; };
 		CED28FF71BE22AB700CFD90D /* HistoriesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED28FF51BE22AB700CFD90D /* HistoriesListViewController.swift */; };
@@ -73,11 +76,17 @@
 		21E7DC76BE66AFF67763D7E1 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		5B579CF7FBD0B3E9EEC53D0D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		60D43B841C5A46063BD23B7D /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE2057681BE2601E0043D339 /* NBApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NBApi.swift; sourceTree = "<group>"; };
-		CE20576A1BE260A90043D339 /* NBApiRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NBApiRequest.swift; sourceTree = "<group>"; };
-		CE20576B1BE260A90043D339 /* NBApiResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NBApiResponse.swift; sourceTree = "<group>"; };
-		CE3767D41BE9D5500069055F /* NBViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NBViewController.swift; sourceTree = "<group>"; };
-		CE3767D61BE9D6340069055F /* NBNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NBNotification.swift; sourceTree = "<group>"; };
+		CE3767D81BE9E4160069055F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE3767D91BE9E4160069055F /* NBActionSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NBActionSheet.swift; sourceTree = "<group>"; };
+		CE3767DA1BE9E4160069055F /* NBAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NBAlert.swift; sourceTree = "<group>"; };
+		CE3767DB1BE9E4160069055F /* NBApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NBApi.swift; sourceTree = "<group>"; };
+		CE3767DC1BE9E4160069055F /* NBApiRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NBApiRequest.swift; sourceTree = "<group>"; };
+		CE3767DD1BE9E4160069055F /* NBApiResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NBApiResponse.swift; sourceTree = "<group>"; };
+		CE3767DE1BE9E4160069055F /* NBEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NBEntity.swift; sourceTree = "<group>"; };
+		CE3767DF1BE9E4160069055F /* NBLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NBLog.swift; sourceTree = "<group>"; };
+		CE3767E01BE9E4160069055F /* NBNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NBNotification.swift; sourceTree = "<group>"; };
+		CE3767E11BE9E4160069055F /* NBViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NBViewController.swift; sourceTree = "<group>"; };
+		CE3767E21BE9E4160069055F /* TemporaryLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TemporaryLibrary.h; sourceTree = "<group>"; };
 		CE4236D81BE06425009BB8D3 /* AppApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppApi.swift; path = Wikipedia/Classes/API/AppApi.swift; sourceTree = "<group>"; };
 		CEA9FA411BDFBB9F00EA245A /* Wikipedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wikipedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEA9FA491BDFBB9F00EA245A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -85,10 +94,7 @@
 		CEA9FA4E1BDFBB9F00EA245A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEA9FA501BDFBB9F00EA245A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEAB67801BE233DE007207AA /* TemporaryLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TemporaryLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CEAB67821BE233DE007207AA /* TemporaryLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TemporaryLibrary.h; sourceTree = "<group>"; };
-		CEAB67841BE233DE007207AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEAB67901BE2D3A0007207AA /* ArrticleEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArrticleEntity.swift; path = Wikipedia/Classes/Entities/ArrticleEntity.swift; sourceTree = "<group>"; };
-		CEAB67921BE2D448007207AA /* NBEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NBEntity.swift; sourceTree = "<group>"; };
 		CEAB67941BE2D620007207AA /* Pods.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods.framework; path = "Pods/../build/Debug-iphoneos/Pods.framework"; sourceTree = "<group>"; };
 		CEAB67961BE2D735007207AA /* AppEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppEntity.swift; path = Wikipedia/Classes/Bases/AppEntity.swift; sourceTree = "<group>"; };
 		CEAB67981BE2E2C7007207AA /* AppColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppColor.swift; path = Wikipedia/Classes/Cores/AppColor.swift; sourceTree = "<group>"; };
@@ -97,7 +103,6 @@
 		CEAB679B1BE2E2C7007207AA /* AppString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppString.swift; path = Wikipedia/Classes/Cores/AppString.swift; sourceTree = "<group>"; };
 		CEAB67A01BE2E3AA007207AA /* AppCommons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppCommons.swift; path = Wikipedia/Classes/Cores/AppCommons.swift; sourceTree = "<group>"; };
 		CEAB67A21BE2E41B007207AA /* AppImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppImage.swift; path = Wikipedia/Classes/Cores/AppImage.swift; sourceTree = "<group>"; };
-		CEAB67A41BE2EC21007207AA /* NBLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NBLog.swift; sourceTree = "<group>"; };
 		CED28FF11BE22AAA00CFD90D /* FavoritesListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FavoritesListViewController.swift; path = Wikipedia/Classes/Schenes/FavoritesList/FavoritesListViewController.swift; sourceTree = "<group>"; };
 		CED28FF21BE22AAA00CFD90D /* FavoritesListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FavoritesListViewController.xib; path = Wikipedia/Classes/Schenes/FavoritesList/FavoritesListViewController.xib; sourceTree = "<group>"; };
 		CED28FF51BE22AB700CFD90D /* HistoriesListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistoriesListViewController.swift; path = Wikipedia/Classes/Schenes/HistoriesList/HistoriesListViewController.swift; sourceTree = "<group>"; };
@@ -187,15 +192,17 @@
 		CEAB67811BE233DE007207AA /* TemporaryLibrary */ = {
 			isa = PBXGroup;
 			children = (
-				CEAB67921BE2D448007207AA /* NBEntity.swift */,
-				CEAB67A41BE2EC21007207AA /* NBLog.swift */,
-				CEAB67821BE233DE007207AA /* TemporaryLibrary.h */,
-				CEAB67841BE233DE007207AA /* Info.plist */,
-				CE2057681BE2601E0043D339 /* NBApi.swift */,
-				CE20576A1BE260A90043D339 /* NBApiRequest.swift */,
-				CE20576B1BE260A90043D339 /* NBApiResponse.swift */,
-				CE3767D41BE9D5500069055F /* NBViewController.swift */,
-				CE3767D61BE9D6340069055F /* NBNotification.swift */,
+				CE3767D81BE9E4160069055F /* Info.plist */,
+				CE3767D91BE9E4160069055F /* NBActionSheet.swift */,
+				CE3767DA1BE9E4160069055F /* NBAlert.swift */,
+				CE3767DB1BE9E4160069055F /* NBApi.swift */,
+				CE3767DC1BE9E4160069055F /* NBApiRequest.swift */,
+				CE3767DD1BE9E4160069055F /* NBApiResponse.swift */,
+				CE3767DE1BE9E4160069055F /* NBEntity.swift */,
+				CE3767DF1BE9E4160069055F /* NBLog.swift */,
+				CE3767E01BE9E4160069055F /* NBNotification.swift */,
+				CE3767E11BE9E4160069055F /* NBViewController.swift */,
+				CE3767E21BE9E4160069055F /* TemporaryLibrary.h */,
 			);
 			path = TemporaryLibrary;
 			sourceTree = "<group>";
@@ -316,7 +323,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEAB67831BE233DE007207AA /* TemporaryLibrary.h in Headers */,
+				CE3767ED1BE9E4160069055F /* TemporaryLibrary.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,6 +428,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE3767E31BE9E4160069055F /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -502,13 +510,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE3767D51BE9D5500069055F /* NBViewController.swift in Sources */,
-				CE20576C1BE260A90043D339 /* NBApiRequest.swift in Sources */,
-				CE3767D71BE9D6340069055F /* NBNotification.swift in Sources */,
-				CE2057691BE2601E0043D339 /* NBApi.swift in Sources */,
-				CE20576D1BE260A90043D339 /* NBApiResponse.swift in Sources */,
-				CEAB67A51BE2EC21007207AA /* NBLog.swift in Sources */,
-				CEAB67931BE2D448007207AA /* NBEntity.swift in Sources */,
+				CE3767E71BE9E4160069055F /* NBApiRequest.swift in Sources */,
+				CE3767E61BE9E4160069055F /* NBApi.swift in Sources */,
+				CE3767EA1BE9E4160069055F /* NBLog.swift in Sources */,
+				CE3767EC1BE9E4160069055F /* NBViewController.swift in Sources */,
+				CE3767E91BE9E4160069055F /* NBEntity.swift in Sources */,
+				CE3767E51BE9E4160069055F /* NBAlert.swift in Sources */,
+				CE3767E81BE9E4160069055F /* NBApiResponse.swift in Sources */,
+				CE3767EB1BE9E4160069055F /* NBNotification.swift in Sources */,
+				CE3767E41BE9E4160069055F /* NBActionSheet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
