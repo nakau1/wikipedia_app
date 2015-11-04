@@ -5,11 +5,16 @@
 import UIKit
 import TemporaryLibrary
 
-/// メイン画面ビューコントローラ
-class MainViewController: AppViewController
+enum AppModels : String
 {
-	override func viewDidLoad()
+	case Article
+}
+
+/// アプリ内モデルの基底クラス
+class AppModel: NBModel
+{
+	class func load(model: AppModels)->AppModel?
 	{
-		super.viewDidLoad()
+		return super.loadModel("\(model.rawValue)Model") as? AppModel
 	}
 }
