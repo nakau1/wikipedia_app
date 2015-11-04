@@ -11,6 +11,8 @@
 		CE2057691BE2601E0043D339 /* NBApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2057681BE2601E0043D339 /* NBApi.swift */; };
 		CE20576C1BE260A90043D339 /* NBApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE20576A1BE260A90043D339 /* NBApiRequest.swift */; };
 		CE20576D1BE260A90043D339 /* NBApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE20576B1BE260A90043D339 /* NBApiResponse.swift */; };
+		CE3767D51BE9D5500069055F /* NBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3767D41BE9D5500069055F /* NBViewController.swift */; };
+		CE3767D71BE9D6340069055F /* NBNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3767D61BE9D6340069055F /* NBNotification.swift */; };
 		CE4236D91BE06425009BB8D3 /* AppApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4236D81BE06425009BB8D3 /* AppApi.swift */; };
 		CEA9FA4A1BDFBB9F00EA245A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA9FA481BDFBB9F00EA245A /* Main.storyboard */; };
 		CEA9FA4C1BDFBB9F00EA245A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEA9FA4B1BDFBB9F00EA245A /* Assets.xcassets */; };
@@ -74,6 +76,8 @@
 		CE2057681BE2601E0043D339 /* NBApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NBApi.swift; sourceTree = "<group>"; };
 		CE20576A1BE260A90043D339 /* NBApiRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NBApiRequest.swift; sourceTree = "<group>"; };
 		CE20576B1BE260A90043D339 /* NBApiResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NBApiResponse.swift; sourceTree = "<group>"; };
+		CE3767D41BE9D5500069055F /* NBViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NBViewController.swift; sourceTree = "<group>"; };
+		CE3767D61BE9D6340069055F /* NBNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NBNotification.swift; sourceTree = "<group>"; };
 		CE4236D81BE06425009BB8D3 /* AppApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppApi.swift; path = Wikipedia/Classes/API/AppApi.swift; sourceTree = "<group>"; };
 		CEA9FA411BDFBB9F00EA245A /* Wikipedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wikipedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEA9FA491BDFBB9F00EA245A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -190,6 +194,8 @@
 				CE2057681BE2601E0043D339 /* NBApi.swift */,
 				CE20576A1BE260A90043D339 /* NBApiRequest.swift */,
 				CE20576B1BE260A90043D339 /* NBApiResponse.swift */,
+				CE3767D41BE9D5500069055F /* NBViewController.swift */,
+				CE3767D61BE9D6340069055F /* NBNotification.swift */,
 			);
 			path = TemporaryLibrary;
 			sourceTree = "<group>";
@@ -496,7 +502,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE3767D51BE9D5500069055F /* NBViewController.swift in Sources */,
 				CE20576C1BE260A90043D339 /* NBApiRequest.swift in Sources */,
+				CE3767D71BE9D6340069055F /* NBNotification.swift in Sources */,
 				CE2057691BE2601E0043D339 /* NBApi.swift in Sources */,
 				CE20576D1BE260A90043D339 /* NBApiResponse.swift in Sources */,
 				CEAB67A51BE2EC21007207AA /* NBLog.swift in Sources */,
