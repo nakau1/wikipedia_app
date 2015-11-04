@@ -23,9 +23,10 @@
 		CE37680D1BE9EC210069055F /* NBHud.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE37680C1BE9EC210069055F /* NBHud.swift */; };
 		CE37680F1BE9EC2D0069055F /* NBTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE37680E1BE9EC2D0069055F /* NBTimer.swift */; };
 		CE3768111BE9EE8D0069055F /* NBModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3768101BE9EE8D0069055F /* NBModel.swift */; };
-		CE4236D91BE06425009BB8D3 /* AppApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4236D81BE06425009BB8D3 /* AppApi.swift */; };
 		CE7767491BE9F0B4008C0351 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3768121BE9EF670069055F /* AppModel.swift */; };
 		CE77674A1BE9F0BC008C0351 /* ArticleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3768151BE9EFAB0069055F /* ArticleModel.swift */; };
+		CE77674C1BE9F553008C0351 /* AppApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE77674B1BE9F553008C0351 /* AppApi.swift */; };
+		CE77674E1BE9F55C008C0351 /* ArticleApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE77674D1BE9F55C008C0351 /* ArticleApi.swift */; };
 		CEA9FA4A1BDFBB9F00EA245A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA9FA481BDFBB9F00EA245A /* Main.storyboard */; };
 		CEA9FA4C1BDFBB9F00EA245A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEA9FA4B1BDFBB9F00EA245A /* Assets.xcassets */; };
 		CEA9FA4F1BDFBB9F00EA245A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA9FA4D1BDFBB9F00EA245A /* LaunchScreen.storyboard */; };
@@ -100,7 +101,8 @@
 		CE3768101BE9EE8D0069055F /* NBModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NBModel.swift; sourceTree = "<group>"; };
 		CE3768121BE9EF670069055F /* AppModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppModel.swift; path = Wikipedia/Classes/Bases/AppModel.swift; sourceTree = "<group>"; };
 		CE3768151BE9EFAB0069055F /* ArticleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArticleModel.swift; path = Wikipedia/Classes/Models/ArticleModel.swift; sourceTree = "<group>"; };
-		CE4236D81BE06425009BB8D3 /* AppApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppApi.swift; path = Wikipedia/Classes/API/AppApi.swift; sourceTree = "<group>"; };
+		CE77674B1BE9F553008C0351 /* AppApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppApi.swift; path = Wikipedia/Classes/Bases/AppApi.swift; sourceTree = "<group>"; };
+		CE77674D1BE9F55C008C0351 /* ArticleApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArticleApi.swift; path = Wikipedia/Classes/API/ArticleApi.swift; sourceTree = "<group>"; };
 		CEA9FA411BDFBB9F00EA245A /* Wikipedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wikipedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEA9FA491BDFBB9F00EA245A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CEA9FA4B1BDFBB9F00EA245A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -174,7 +176,7 @@
 		CE4236D71BE0640B009BB8D3 /* API */ = {
 			isa = PBXGroup;
 			children = (
-				CE4236D81BE06425009BB8D3 /* AppApi.swift */,
+				CE77674D1BE9F55C008C0351 /* ArticleApi.swift */,
 			);
 			name = API;
 			sourceTree = "<group>";
@@ -322,6 +324,7 @@
 		CEE5FA2E1BDFC14900D1624E /* Bases */ = {
 			isa = PBXGroup;
 			children = (
+				CE77674B1BE9F553008C0351 /* AppApi.swift */,
 				CEAB67961BE2D735007207AA /* AppEntity.swift */,
 				CE3768121BE9EF670069055F /* AppModel.swift */,
 				CEE5FA2F1BDFC16C00D1624E /* AppViewController.swift */,
@@ -518,6 +521,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE77674A1BE9F0BC008C0351 /* ArticleModel.swift in Sources */,
+				CE77674E1BE9F55C008C0351 /* ArticleApi.swift in Sources */,
 				CE7767491BE9F0B4008C0351 /* AppModel.swift in Sources */,
 				CEAB67971BE2D735007207AA /* AppEntity.swift in Sources */,
 				CEAB679F1BE2E2C7007207AA /* AppString.swift in Sources */,
@@ -527,7 +531,7 @@
 				CEE5FA361BDFC52300D1624E /* MainViewController.swift in Sources */,
 				CED28FF71BE22AB700CFD90D /* HistoriesListViewController.swift in Sources */,
 				CEE5FA301BDFC16C00D1624E /* AppViewController.swift in Sources */,
-				CE4236D91BE06425009BB8D3 /* AppApi.swift in Sources */,
+				CE77674C1BE9F553008C0351 /* AppApi.swift in Sources */,
 				CEAB679E1BE2E2C7007207AA /* AppConstants.swift in Sources */,
 				CED28FFF1BE22AD000CFD90D /* MenuViewController.swift in Sources */,
 				CEAB67A11BE2E3AA007207AA /* AppCommons.swift in Sources */,
