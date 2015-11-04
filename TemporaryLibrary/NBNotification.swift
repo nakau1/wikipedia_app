@@ -4,7 +4,7 @@
 // =============================================================================
 import UIKit
 
-/// 通知の処理を行うクラス
+/// NSNotificationCenterの拡張
 public extension NSNotificationCenter
 {
 	/// 通知の監視開始/終了の設定を一括で行う
@@ -23,6 +23,15 @@ public extension NSNotificationCenter
 				self.removeObserver(observer, name: name, object: nil)
 			}
 		}
+	}
+	
+	/// 渡したNSNotificationオブジェクトに紐づく通知監視を解除する
+	/// - parameters:
+	///   - observer: 監視するオブジェクト
+	///   - notification: NSNotificationオブジェクト
+	public func removeObserver(observer: NSObject, notification: NSNotification)
+	{
+		self.removeObserver(observer, name: notification.name, object: notification.object)
 	}
 }
 
