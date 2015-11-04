@@ -4,7 +4,7 @@
 // =============================================================================
 import UIKit
 
-///
+/// UIViewの拡張
 public extension UIView
 {
 	/// XIBからビューインスタンスを生成する
@@ -25,7 +25,7 @@ public extension UIView
 		if let nibName = nibName {
 			name = nibName
 		} else {
-			name = getShortClassName(self)
+			name = NBReflection(self).shortClassName()
 		}
 		
 		let nib = UINib(nibName: name, bundle: bundle)

@@ -4,76 +4,71 @@
 // =============================================================================
 import UIKit
 
-/// パッケージ名を抜いたクラス名を取得する
-/// - parameters:
-///   - target: 対象の値
-/// - returns: パッケージ名を抜いたクラス名
-public func getShortClassName(target: Any?)->String
+// クラスについての処理を行うクラス
+public class NBReflection
 {
-	func name(cls: AnyClass?)->String {
-		guard
-			let cls = cls,
-			let name = NSStringFromClass(cls).componentsSeparatedByString(".").last else {
-				return "unkown"
+	let target: Any?
+	
+	init(_ target: Any?)
+	{
+		self.target = target
+	}
+	
+	/// パッケージ名のないクラス名を取得する
+	public func shortClassName()->String
+	{
+		return self.className(false)
+	}
+	
+	/// パッケージ名を含めたクラス名を取得する
+	public func fullClassName()->String
+	{
+		return self.className(true)
+	}
+	
+	/// パッケージ名を取得する
+	public func packageName()->String?
+	{
+		let full  = self.fullClassName()
+		let short = self.shortClassName()
+		
+		if full == short {
+			return nil
+		}
+		guard let range = full.rangeOfString(".\(short)") else {
+			return nil
+		}
+		return full.substringToIndex(range.startIndex)
+	}
+	
+	private func className(full: Bool)->String
+	{
+		if let target = self.target {
+			if let cls = target as? AnyClass {
+				return self.classNameByClass(cls, full)
+			} else if let obj = target as? AnyObject {
+				return self.classNameByClass(obj.dynamicType, full)
+			} else {
+				return self.classNameByClass(nil, full)
+			}
+		}
+		else {
+			return "nil"
+		}
+	}
+	
+	private func classNameByClass(cls: AnyClass?, _ full: Bool)->String
+	{
+		let unknown = "unknown"
+		guard let cls = cls else {
+			return unknown
+		}
+		let fullName = NSStringFromClass(cls)
+		if full { return fullName }
+		
+		guard let name = fullName.componentsSeparatedByString(".").last else {
+			return unknown
 		}
 		return name
 	}
-	
-	if let target = target {
-		if let cls = target as? AnyClass {
-			return name(cls)
-		} else if let obj = target as? AnyObject {
-			return name(obj.dynamicType)
-		} else {
-			return name(nil)
-		}
-	}
-	else {
-		return "nil"
-	}
-}
-
-/// パッケージ名を含めたクラス名を取得する
-/// - parameters:
-///   - target: 対象の値
-/// - returns: パッケージ名を含めたクラス名
-public func getFullClassName(target: Any?)->String
-{
-	func name(cls: AnyClass?)->String {
-		guard let cls = cls else {
-			return "unkown"
-		}
-		return NSStringFromClass(cls)
-	}
-	
-	if let target = target {
-		if let cls = target as? AnyClass {
-			return name(cls)
-		} else if let obj = target as? AnyObject {
-			return name(obj.dynamicType)
-		} else {
-			return name(nil)
-		}
-	}
-	else {
-		return "nil"
-	}
-}
-
-/// パッケージ名を取得する
-/// - parameters:
-///   - target: 対象の値
-/// - returns: パッケージ名
-public func getPackageName(target: Any?)->String?
-{
-	let full  = getFullClassName(target)
-	let short = getShortClassName(target)
-	
-	if full == short {
-		return nil
-	}
-	guard let range = full.rangeOfString(".\(short)") else {
-		return nil
-	}
-	return full.substringToIndex(range.startIndex)
 }
