@@ -3,13 +3,9 @@
 // Copyright (C) 2015年 NeroBlu. All rights reserved.
 // =============================================================================
 import UIKit
-import SwiftyJSON
 
-/// 記事エンティティ
-class ArrticleEntity: AppEntity
+/// 記事モデル
+class ArticleModel: AppModel
 {
-	var title:    String = ""
-	var id:       String?
-	var summary:  String = ""
-	var contents: String = ""
+	
 }

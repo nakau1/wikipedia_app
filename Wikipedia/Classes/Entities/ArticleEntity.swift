@@ -3,13 +3,13 @@
 // Copyright (C) 2015年 NeroBlu. All rights reserved.
 // =============================================================================
 import UIKit
-import TemporaryLibrary
+import SwiftyJSON
 
-/// メイン画面ビューコントローラ
-class MainViewController: AppViewController
+/// 記事エンティティ
+class ArticleEntity: AppEntity
 {
-	override func viewDidLoad()
-	{
-		super.viewDidLoad()
-	}
+	var title:    String = ""
+	var id:       String?
+	var summary:  String = ""
+	var contents: String = ""
 }
