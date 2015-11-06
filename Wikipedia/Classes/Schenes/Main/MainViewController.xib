@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="Wikipedia" customModuleProvider="target">
             <connections>
+                <outlet property="titleView" destination="hoY-Qa-L52" id="Dnh-LN-MPK"/>
                 <outlet property="view" destination="iN0-l3-epB" id="89S-Xz-1pV"/>
             </connections>
         </placeholder>
@@ -15,20 +15,70 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="w4Q-3s-dxv">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PZL-jz-Y4D">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
                 <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fi1-4T-2RK">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
-                    <color key="backgroundColor" red="0.50588235290000005" green="0.55294117649999996" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </webView>
             </subviews>
             <animations/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstAttribute="bottom" secondItem="PZL-jz-Y4D" secondAttribute="bottom" id="1Zf-ex-4E9"/>
+                <constraint firstAttribute="bottom" secondItem="w4Q-3s-dxv" secondAttribute="bottom" id="403-QL-PBg"/>
                 <constraint firstItem="fi1-4T-2RK" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="5co-Td-KjX"/>
+                <constraint firstItem="w4Q-3s-dxv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="5i8-1o-fbG"/>
                 <constraint firstAttribute="bottom" secondItem="fi1-4T-2RK" secondAttribute="bottom" id="BGn-AC-Bvn"/>
+                <constraint firstItem="PZL-jz-Y4D" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="EXr-JT-nqQ"/>
+                <constraint firstAttribute="trailing" secondItem="PZL-jz-Y4D" secondAttribute="trailing" id="Fp8-97-Co7"/>
+                <constraint firstItem="w4Q-3s-dxv" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="WUt-KK-3TJ"/>
+                <constraint firstItem="PZL-jz-Y4D" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="WbV-Wg-ASt"/>
+                <constraint firstAttribute="trailing" secondItem="w4Q-3s-dxv" secondAttribute="trailing" id="ZkV-um-zNn"/>
                 <constraint firstItem="fi1-4T-2RK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="rJf-6b-MzR"/>
                 <constraint firstAttribute="trailing" secondItem="fi1-4T-2RK" secondAttribute="trailing" id="xsI-ub-iYh"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="185" y="259"/>
+        </view>
+        <view contentMode="scaleToFill" id="hoY-Qa-L52">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LE9-aF-UU4">
+                    <rect key="frame" x="4" y="4" width="36" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="36" id="Vhg-7x-d0V"/>
+                    </constraints>
+                    <state key="normal" title="三"/>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="入力してください" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NDN-Hx-Kwi">
+                    <rect key="frame" x="44" y="4" width="272" height="36"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <textInputTraits key="textInputTraits" spellCheckingType="no" returnKeyType="search"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="FAb-Qx-ZC1"/>
+                    </connections>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="LE9-aF-UU4" firstAttribute="top" secondItem="hoY-Qa-L52" secondAttribute="top" constant="4" id="7fk-vg-xMG"/>
+                <constraint firstAttribute="bottom" secondItem="LE9-aF-UU4" secondAttribute="bottom" constant="4" id="966-85-8i7"/>
+                <constraint firstItem="LE9-aF-UU4" firstAttribute="leading" secondItem="hoY-Qa-L52" secondAttribute="leading" constant="4" id="IR3-7X-rsg"/>
+                <constraint firstAttribute="trailing" secondItem="NDN-Hx-Kwi" secondAttribute="trailing" constant="4" id="MC6-s6-dJK"/>
+                <constraint firstItem="NDN-Hx-Kwi" firstAttribute="top" secondItem="LE9-aF-UU4" secondAttribute="top" id="Mxe-lU-ENC"/>
+                <constraint firstItem="NDN-Hx-Kwi" firstAttribute="leading" secondItem="LE9-aF-UU4" secondAttribute="trailing" constant="4" id="OwD-ZC-HOe"/>
+                <constraint firstItem="NDN-Hx-Kwi" firstAttribute="bottom" secondItem="LE9-aF-UU4" secondAttribute="bottom" id="jqG-ht-Mcj"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-175" y="259"/>
         </view>
     </objects>
 </document>
