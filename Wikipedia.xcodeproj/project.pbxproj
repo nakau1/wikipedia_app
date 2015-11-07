@@ -50,6 +50,7 @@
 		CED28FFC1BE22AC600CFD90D /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED28FFA1BE22AC600CFD90D /* SettingViewController.xib */; };
 		CED28FFF1BE22AD000CFD90D /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED28FFD1BE22AD000CFD90D /* MenuViewController.swift */; };
 		CED290001BE22AD000CFD90D /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED28FFE1BE22AD000CFD90D /* MenuViewController.xib */; };
+		CED421231BEDFDDE00F36DA6 /* NBTableViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED421221BEDFDDE00F36DA6 /* NBTableViewAdapter.swift */; };
 		CEE5FA2B1BDFC02800D1624E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE5FA2A1BDFC02800D1624E /* AppDelegate.swift */; };
 		CEE5FA301BDFC16C00D1624E /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE5FA2F1BDFC16C00D1624E /* AppViewController.swift */; };
 		CEE5FA361BDFC52300D1624E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE5FA341BDFC52300D1624E /* MainViewController.swift */; };
@@ -128,6 +129,7 @@
 		CED28FFA1BE22AC600CFD90D /* SettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SettingViewController.xib; path = Wikipedia/Classes/Schenes/Setting/SettingViewController.xib; sourceTree = "<group>"; };
 		CED28FFD1BE22AD000CFD90D /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuViewController.swift; path = Wikipedia/Classes/Schenes/Menu/MenuViewController.swift; sourceTree = "<group>"; };
 		CED28FFE1BE22AD000CFD90D /* MenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MenuViewController.xib; path = Wikipedia/Classes/Schenes/Menu/MenuViewController.xib; sourceTree = "<group>"; };
+		CED421221BEDFDDE00F36DA6 /* NBTableViewAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NBTableViewAdapter.swift; sourceTree = "<group>"; };
 		CEE5FA291BDFC02700D1624E /* Wikipedia-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Wikipedia-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		CEE5FA2A1BDFC02800D1624E /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Wikipedia/Classes/Cores/AppDelegate.swift; sourceTree = "<group>"; };
 		CEE5FA2F1BDFC16C00D1624E /* AppViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppViewController.swift; path = Wikipedia/Classes/Bases/AppViewController.swift; sourceTree = "<group>"; };
@@ -232,6 +234,7 @@
 				CE3767FC1BE9E6150069055F /* NBNotification.swift */,
 				CE3767FD1BE9E6150069055F /* NBReflection.swift */,
 				CE42F5AC1BEC983F00338D4E /* NBSlideMenuViewController.swift */,
+				CED421221BEDFDDE00F36DA6 /* NBTableViewAdapter.swift */,
 				CE37680E1BE9EC2D0069055F /* NBTimer.swift */,
 				CE3767FE1BE9E6150069055F /* NBView.swift */,
 				CE3767FF1BE9E6150069055F /* NBViewController.swift */,
@@ -554,6 +557,7 @@
 				CE37680D1BE9EC210069055F /* NBHud.swift in Sources */,
 				CE3768061BE9E6150069055F /* NBEntity.swift in Sources */,
 				CE37680A1BE9E6150069055F /* NBView.swift in Sources */,
+				CED421231BEDFDDE00F36DA6 /* NBTableViewAdapter.swift in Sources */,
 				CE3768081BE9E6150069055F /* NBNotification.swift in Sources */,
 				CE3768021BE9E6150069055F /* NBApi.swift in Sources */,
 				CE3768011BE9E6150069055F /* NBAlert.swift in Sources */,

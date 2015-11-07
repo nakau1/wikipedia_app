@@ -7,5 +7,5 @@ import UIKit
 /// ビューコントローラの基底クラス
 public class NBViewController : UIViewController
 {
-
+	internal var externalProperties = [String : Any]()
 }
