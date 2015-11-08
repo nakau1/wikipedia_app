@@ -13,26 +13,26 @@
                         <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="18f-7B-HRx">
-                                <rect key="frame" x="37" y="289" width="300" height="89"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="title-logo" translatesAutoresizingMaskIntoConstraints="NO" id="18f-7B-HRx">
+                                <rect key="frame" x="40" y="258" width="240" height="53"/>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="WFv-fe-dKh"/>
-                                    <constraint firstAttribute="height" constant="89" id="YGO-dD-3Ok"/>
+                                    <constraint firstAttribute="height" constant="53" id="dhg-a1-vwS"/>
+                                    <constraint firstAttribute="width" constant="240" id="nLt-kJ-o92"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="18f-7B-HRx" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="FXz-wW-CfD"/>
-                            <constraint firstItem="18f-7B-HRx" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="wnV-E7-L9y"/>
+                            <constraint firstItem="18f-7B-HRx" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Dly-Eo-uhL"/>
+                            <constraint firstItem="18f-7B-HRx" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="djT-yJ-9rM"/>
                         </constraints>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -40,6 +40,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="logo" width="300" height="89"/>
+        <image name="title-logo" width="240" height="53"/>
     </resources>
 </document>
