@@ -42,6 +42,7 @@
 		CEAB679F1BE2E2C7007207AA /* AppString.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB679B1BE2E2C7007207AA /* AppString.swift */; };
 		CEAB67A11BE2E3AA007207AA /* AppCommons.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB67A01BE2E3AA007207AA /* AppCommons.swift */; };
 		CEAB67A31BE2E41B007207AA /* AppImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB67A21BE2E41B007207AA /* AppImage.swift */; };
+		CEB7956B1BEF11180027BFAF /* HistoriesListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEB795691BEF0FF10027BFAF /* HistoriesListCell.xib */; };
 		CED28FF31BE22AAA00CFD90D /* FavoritesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED28FF11BE22AAA00CFD90D /* FavoritesListViewController.swift */; };
 		CED28FF41BE22AAA00CFD90D /* FavoritesListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED28FF21BE22AAA00CFD90D /* FavoritesListViewController.xib */; };
 		CED28FF71BE22AB700CFD90D /* HistoriesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED28FF51BE22AB700CFD90D /* HistoriesListViewController.swift */; };
@@ -121,6 +122,7 @@
 		CEAB679B1BE2E2C7007207AA /* AppString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppString.swift; path = Wikipedia/Classes/Cores/AppString.swift; sourceTree = "<group>"; };
 		CEAB67A01BE2E3AA007207AA /* AppCommons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppCommons.swift; path = Wikipedia/Classes/Cores/AppCommons.swift; sourceTree = "<group>"; };
 		CEAB67A21BE2E41B007207AA /* AppImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppImage.swift; path = Wikipedia/Classes/Cores/AppImage.swift; sourceTree = "<group>"; };
+		CEB795691BEF0FF10027BFAF /* HistoriesListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HistoriesListCell.xib; path = Wikipedia/Classes/Schenes/HistoriesList/HistoriesListCell.xib; sourceTree = "<group>"; };
 		CED28FF11BE22AAA00CFD90D /* FavoritesListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FavoritesListViewController.swift; path = Wikipedia/Classes/Schenes/FavoritesList/FavoritesListViewController.swift; sourceTree = "<group>"; };
 		CED28FF21BE22AAA00CFD90D /* FavoritesListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FavoritesListViewController.xib; path = Wikipedia/Classes/Schenes/FavoritesList/FavoritesListViewController.xib; sourceTree = "<group>"; };
 		CED28FF51BE22AB700CFD90D /* HistoriesListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistoriesListViewController.swift; path = Wikipedia/Classes/Schenes/HistoriesList/HistoriesListViewController.swift; sourceTree = "<group>"; };
@@ -273,6 +275,7 @@
 			children = (
 				CED28FF51BE22AB700CFD90D /* HistoriesListViewController.swift */,
 				CED28FF61BE22AB700CFD90D /* HistoriesListViewController.xib */,
+				CEB795691BEF0FF10027BFAF /* HistoriesListCell.xib */,
 			);
 			name = HistoriesList;
 			sourceTree = "<group>";
@@ -450,6 +453,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEB7956B1BEF11180027BFAF /* HistoriesListCell.xib in Resources */,
 				CED28FFC1BE22AC600CFD90D /* SettingViewController.xib in Resources */,
 				CEA9FA4F1BDFBB9F00EA245A /* LaunchScreen.storyboard in Resources */,
 				CED28FF81BE22AB700CFD90D /* HistoriesListViewController.xib in Resources */,

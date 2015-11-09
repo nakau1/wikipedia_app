@@ -14,20 +14,56 @@ class HistoriesListViewController: AppViewController
 	{
 		super.viewDidLoad()
 		
-		self.tableViewAdapter = NBTableViewAdapter(tableView, sections: [HistoriesListSection()])
+		self.tableViewAdapter = HistoriesListAdapter(self, tableView)
+		self.tableViewAdapter!.reload()
 	}
 	
-	class HistoriesListSection : NBTableViewSection
+	func test(a:Any)
 	{
-		override var rowNumber : Int { get { return 10 } }
+		D(a)
+	}
+}
+
+class HistoriesListAdapter : NBTableViewAdapter
+{
+	override func setupSections() -> [NBTableViewSection] {
+		return [HistoriesListSection()]
+	}
+}
+
+class HistoriesListSection : NBTableViewSection
+{
+	override var rowNumber : Int { get { return 50 } }
+	
+	override func cellClass(row: Int) -> NSObject.Type {
+		return HistoriesListCell.self
+	}
+	
+	override func cellNibName(row: Int) -> String {
+		return "HistoriesListCell"
+	}
+	
+	override func didSelectRow(row: Int) {
 		
-		override func cellClass(row: Int) -> NSObject.Type {
-			return HistoriesListCell.self
+		self.parentAdapter.parentViewController.navigationController?.pushViewController(HistoriesListViewController(), animated: true)
+	}
+}
+
+class HistoriesListCell : NBTableViewCell
+{
+	override func awakeFromNib() {
+		super.awakeFromNib()
+		self.selectable = false
+	}
+	
+	@IBAction private func didTapButton()
+	{
+		if let vc = self.parentSection.parentAdapter.parentViewController as? HistoriesListViewController {
+			vc.test(self.indexPath)
 		}
 	}
 	
-	class HistoriesListCell : NBTableViewCell
-	{
-		
+	deinit {
+		D("deinit \(self.indexPath)")
 	}
 }
