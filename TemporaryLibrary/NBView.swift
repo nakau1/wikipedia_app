@@ -42,3 +42,19 @@ public extension UIView
 		}
 	}
 }
+
+/// CALayerの拡張
+public extension CALayer
+{
+	/// XIBからボーダー色を設定できるようにするためのプロパティ
+	/// 
+	/// XIBの"Identity Inspector" > "User Defined Runtime Attributes"の
+	/// "layer.borderIBColor" Type:"Color" で設定することができます
+	///
+	/// - parameters:
+	///   - color: ボーター色
+	public func setBorderUIColor(color: UIColor!)
+	{
+		self.borderColor = color.CGColor
+	}
+}
