@@ -8,11 +8,17 @@ import TemporaryLibrary
 /// メイン画面ビューコントローラ
 class MainViewController: AppViewController, UITextFieldDelegate
 {
-  @IBOutlet private weak var titleView: UIView!
-  
+	@IBOutlet private weak var webview: UIWebView!
+	
 	override func viewDidLoad()
 	{
 		super.viewDidLoad()
-		self.navigationItem.titleView = self.titleView
+		
+		webview.loadRequest(NSURLRequest(URL: NSURL(string: "https://translate.google.co.jp/")!))
+	}
+	
+	@IBAction private func didTapMenu()
+	{
+		self.slideMenuController()?.openLeft()
 	}
 }
