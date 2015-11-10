@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MenuViewController" customModule="Wikipedia" customModuleProvider="target">
             <connections>
-                <outlet property="tableView" destination="5p1-bG-krQ" id="ANt-wL-Zki"/>
+                <outlet property="scrollView" destination="WmO-e3-JDI" id="zjc-DW-3nJ"/>
                 <outlet property="view" destination="iN0-l3-epB" id="89S-Xz-1pV"/>
             </connections>
         </placeholder>
@@ -16,20 +15,47 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5p1-bG-krQ">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJv-sH-DIG">
+                    <rect key="frame" x="262" y="0.0" width="50" height="50"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="0bv-Mt-VVI"/>
+                        <constraint firstAttribute="height" constant="50" id="EQ1-HA-Pgv"/>
+                    </constraints>
+                    <state key="normal" image="bookmarked_off"/>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wdg-Ve-PAw">
+                    <rect key="frame" x="0.0" y="59" width="320" height="1"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.5450980392" green="0.76078431369999999" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="K35-Do-VyR"/>
+                    </constraints>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WmO-e3-JDI">
+                    <rect key="frame" x="0.0" y="60" width="320" height="420"/>
+                    <animations/>
+                </scrollView>
             </subviews>
             <animations/>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="0.14117647059999999" green="0.14117647059999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="5p1-bG-krQ" secondAttribute="bottom" id="Or2-Cu-jLx"/>
-                <constraint firstAttribute="trailing" secondItem="5p1-bG-krQ" secondAttribute="trailing" id="ejp-2H-Wjf"/>
-                <constraint firstItem="5p1-bG-krQ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="rn7-mr-0bo"/>
-                <constraint firstItem="5p1-bG-krQ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="xPG-d8-HyK"/>
+                <constraint firstAttribute="trailing" secondItem="WmO-e3-JDI" secondAttribute="trailing" id="2U8-yq-09N"/>
+                <constraint firstItem="WmO-e3-JDI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="IIR-il-mml"/>
+                <constraint firstAttribute="bottom" secondItem="WmO-e3-JDI" secondAttribute="bottom" id="OvH-1W-QP4"/>
+                <constraint firstAttribute="trailing" secondItem="uJv-sH-DIG" secondAttribute="trailing" constant="8" id="QTn-wd-Y1w"/>
+                <constraint firstItem="uJv-sH-DIG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Z7v-lb-VOh"/>
+                <constraint firstAttribute="trailing" secondItem="wdg-Ve-PAw" secondAttribute="trailing" id="ZpE-wV-UM4"/>
+                <constraint firstItem="wdg-Ve-PAw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="cvD-Ys-Sen"/>
+                <constraint firstItem="WmO-e3-JDI" firstAttribute="top" secondItem="wdg-Ve-PAw" secondAttribute="bottom" id="ntz-jX-OhN"/>
+                <constraint firstItem="wdg-Ve-PAw" firstAttribute="top" secondItem="uJv-sH-DIG" secondAttribute="bottom" constant="9" id="t67-7d-OiC"/>
             </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="495" y="570"/>
         </view>
     </objects>
+    <resources>
+        <image name="bookmarked_off" width="50" height="50"/>
+    </resources>
 </document>
