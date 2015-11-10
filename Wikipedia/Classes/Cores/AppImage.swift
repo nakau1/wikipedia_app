@@ -9,14 +9,25 @@ class AppImage
 {
 	enum ButtonIcon : String
 	{
-		case Menu = "menu"
+		case Bookmark = "btn_icon_bookmark"
+		case History  = "btn_icon_history"
+		case Menu     = "btn_icon_menu"
+		case Next     = "btn_icon_next"
+		case Prev     = "btn_icon_prev"
+		case Reload   = "btn_icon_reload"
+		case Safari   = "btn_icon_safari"
+		case Search   = "btn_icon_search"
+		case Setting  = "btn_icon_setting"
+		case Suggest  = "btn_icon_suggest"
+		
+//		case Menu = "btn_icon_menu"
+//		case Menu = "btn_icon_menu"
 	}
 	
 	/// ON/OFFの切り替えがある画像素材
 	enum Toggle : String
 	{
-		case Checkbox = "checkbox"
-		case Favorite = "favorite"
+		case Bookmark = "bookmarked"
 		
 		/// ON/OFFの画像素材名を取得する
 		/// - parameter on: 画像のON/OFF
