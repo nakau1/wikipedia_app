@@ -6,6 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchViewController" customModule="Wikipedia" customModuleProvider="target">
             <connections>
+                <outlet property="txfSearch" destination="0tD-76-GZZ" id="hwd-4E-B2q"/>
                 <outlet property="view" destination="2dV-nV-Z3c" id="PWL-iC-eSl"/>
             </connections>
         </placeholder>
@@ -14,39 +15,39 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Pg-WP-DCU">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8y5-Ik-Gg9">
                     <rect key="frame" x="4" y="24" width="312" height="44"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4bw-1C-Xso">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CIW-Ex-NvN">
                             <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
                             <animations/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="44" id="8zg-2W-xqC"/>
-                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="glg-hW-Zll"/>
-                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="voN-Cr-hlR"/>
-                                <constraint firstAttribute="height" constant="44" id="yqo-21-JX1"/>
+                                <constraint firstAttribute="width" constant="44" id="SXG-0K-Hto"/>
                             </constraints>
                             <inset key="contentEdgeInsets" minX="12" minY="12" maxX="12" maxY="12"/>
-                            <state key="normal" image="btn_icon_menu"/>
+                            <state key="normal" image="btn_icon_close"/>
+                            <connections>
+                                <action selector="didTapClose" destination="-1" eventType="touchUpInside" id="laI-Vd-UH3"/>
+                            </connections>
                         </button>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="キーワードを入力してください" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eaK-4d-rYd">
-                            <rect key="frame" x="44" y="0.0" width="260" height="44"/>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="入力してください" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0tD-76-GZZ">
+                            <rect key="frame" x="44" y="0.0" width="258" height="44"/>
                             <animations/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <color key="textColor" red="0.70588235290000001" green="0.70588235290000001" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
-                            <nil key="highlightedColor"/>
-                        </label>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
                     </subviews>
                     <animations/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="bottom" secondItem="eaK-4d-rYd" secondAttribute="bottom" id="4v9-TN-yVO"/>
-                        <constraint firstItem="4bw-1C-Xso" firstAttribute="top" secondItem="9Pg-WP-DCU" secondAttribute="top" id="KSL-iV-WDy"/>
-                        <constraint firstAttribute="height" constant="44" id="N1J-vm-kqr"/>
-                        <constraint firstItem="eaK-4d-rYd" firstAttribute="leading" secondItem="4bw-1C-Xso" secondAttribute="trailing" id="Rck-8X-Xc7"/>
-                        <constraint firstItem="4bw-1C-Xso" firstAttribute="leading" secondItem="9Pg-WP-DCU" secondAttribute="leading" id="cQP-6F-Wkm"/>
-                        <constraint firstAttribute="trailing" secondItem="eaK-4d-rYd" secondAttribute="trailing" constant="8" id="m0n-2a-BCY"/>
-                        <constraint firstItem="eaK-4d-rYd" firstAttribute="top" secondItem="9Pg-WP-DCU" secondAttribute="top" id="w8U-dU-X5r"/>
+                        <constraint firstAttribute="trailing" secondItem="0tD-76-GZZ" secondAttribute="trailing" constant="10" id="1Jr-oY-qY1"/>
+                        <constraint firstAttribute="bottom" secondItem="CIW-Ex-NvN" secondAttribute="bottom" id="CBH-fY-dO8"/>
+                        <constraint firstAttribute="height" constant="44" id="Sqt-m1-cuk"/>
+                        <constraint firstItem="0tD-76-GZZ" firstAttribute="top" secondItem="8y5-Ik-Gg9" secondAttribute="top" id="WNB-um-ZO1"/>
+                        <constraint firstAttribute="bottom" secondItem="0tD-76-GZZ" secondAttribute="bottom" id="XUR-Jq-zmS"/>
+                        <constraint firstItem="CIW-Ex-NvN" firstAttribute="leading" secondItem="8y5-Ik-Gg9" secondAttribute="leading" id="fhu-8p-qiU"/>
+                        <constraint firstItem="0tD-76-GZZ" firstAttribute="leading" secondItem="CIW-Ex-NvN" secondAttribute="trailing" id="hRG-HG-cRe"/>
+                        <constraint firstItem="CIW-Ex-NvN" firstAttribute="top" secondItem="8y5-Ik-Gg9" secondAttribute="top" id="xNL-H1-goA"/>
                     </constraints>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
@@ -62,14 +63,111 @@
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                 </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gDL-Sp-91w">
+                    <rect key="frame" x="0.0" y="78" width="320" height="402"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
             </subviews>
             <animations/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="gDL-Sp-91w" secondAttribute="trailing" id="CA1-Ic-yWp"/>
+                <constraint firstItem="8y5-Ik-Gg9" firstAttribute="leading" secondItem="2dV-nV-Z3c" secondAttribute="leading" constant="4" id="Gp4-Fu-1ib"/>
+                <constraint firstItem="gDL-Sp-91w" firstAttribute="leading" secondItem="2dV-nV-Z3c" secondAttribute="leading" id="KVh-LY-QAW"/>
+                <constraint firstItem="gDL-Sp-91w" firstAttribute="top" secondItem="8y5-Ik-Gg9" secondAttribute="bottom" constant="10" id="KrI-pE-jR9"/>
+                <constraint firstAttribute="trailing" secondItem="8y5-Ik-Gg9" secondAttribute="trailing" constant="4" id="XGo-va-DeV"/>
+                <constraint firstAttribute="bottom" secondItem="gDL-Sp-91w" secondAttribute="bottom" id="eCB-Il-2TS"/>
+                <constraint firstItem="8y5-Ik-Gg9" firstAttribute="top" secondItem="2dV-nV-Z3c" secondAttribute="top" constant="24" id="elT-1S-BDU"/>
+            </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="811" y="510"/>
+            <point key="canvasLocation" x="964" y="528"/>
         </view>
+        <viewController id="Bh5-6k-j47" customClass="NBSlideTabContentsViewController" customModule="TemporaryLibrary">
+            <nil key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="view" destination="gDL-Sp-91w" id="ZO7-1o-qNP"/>
+            </connections>
+            <point key="canvasLocation" x="1402" y="528"/>
+        </viewController>
+        <viewController id="LSY-fE-cFH" customClass="HistoriesListViewController" customModule="Wikipedia" customModuleProvider="target">
+            <layoutGuides>
+                <viewControllerLayoutGuide type="top" id="ORp-nR-Z7W"/>
+                <viewControllerLayoutGuide type="bottom" id="PxM-5g-yjA"/>
+            </layoutGuides>
+            <view key="view" contentMode="scaleToFill" id="3IM-2A-pdB">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="34Q-hl-Dy6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </tableView>
+                </subviews>
+                <animations/>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            </view>
+            <nil key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="tableView" destination="34Q-hl-Dy6" id="dse-A9-Ya3"/>
+            </connections>
+            <point key="canvasLocation" x="964" y="1103"/>
+        </viewController>
+        <viewController id="gzX-tC-gbi" customClass="HistoriesListViewController" customModule="Wikipedia" customModuleProvider="target">
+            <layoutGuides>
+                <viewControllerLayoutGuide type="top" id="NtT-0A-Dje"/>
+                <viewControllerLayoutGuide type="bottom" id="wmA-Cc-aha"/>
+            </layoutGuides>
+            <view key="view" contentMode="scaleToFill" id="8Z0-RL-aKy">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gNU-3b-JKJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </tableView>
+                </subviews>
+                <animations/>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            </view>
+            <nil key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="tableView" destination="gNU-3b-JKJ" id="aXP-7Z-u34"/>
+            </connections>
+            <point key="canvasLocation" x="1694" y="1103"/>
+        </viewController>
+        <viewController id="Kmv-I6-hjH" customClass="HistoriesListViewController" customModule="Wikipedia" customModuleProvider="target">
+            <layoutGuides>
+                <viewControllerLayoutGuide type="top" id="9Ls-oc-oPh"/>
+                <viewControllerLayoutGuide type="bottom" id="NdF-W7-cQ8"/>
+            </layoutGuides>
+            <view key="view" contentMode="scaleToFill" id="UsR-He-1R4">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UHi-wU-22o">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </tableView>
+                </subviews>
+                <animations/>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            </view>
+            <nil key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="tableView" destination="UHi-wU-22o" id="1ph-1I-YQ4"/>
+            </connections>
+            <point key="canvasLocation" x="1329" y="1103"/>
+        </viewController>
     </objects>
     <resources>
-        <image name="btn_icon_menu" width="32" height="32"/>
+        <image name="btn_icon_close" width="32" height="32"/>
     </resources>
 </document>
