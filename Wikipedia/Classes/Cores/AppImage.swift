@@ -19,6 +19,7 @@ class AppImage
 		case Search   = "btn_icon_search"
 		case Setting  = "btn_icon_setting"
 		case Suggest  = "btn_icon_suggest"
+		case Close    = "btn_icon_close"
 		
 //		case Menu = "btn_icon_menu"
 //		case Menu = "btn_icon_menu"
