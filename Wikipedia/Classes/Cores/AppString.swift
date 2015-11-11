@@ -10,4 +10,8 @@ class AppString
 	class Error {
 		static let Network = "ネットワークに接続できません"
 	}
+	
+	class Search {
+		static let PlaceholderText = "キーワードを入力してください"
+	}
 }
