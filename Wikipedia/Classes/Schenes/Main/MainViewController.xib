@@ -27,10 +27,7 @@
                             <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
                             <animations/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="44" id="Ds9-ZQ-tFf"/>
-                                <constraint firstAttribute="width" constant="44" id="aHZ-cH-Hl2"/>
-                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="rMD-c7-Iqv"/>
-                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="wPC-w1-UzR"/>
+                                <constraint firstAttribute="width" constant="44" id="cj2-mw-2wi"/>
                             </constraints>
                             <inset key="contentEdgeInsets" minX="12" minY="12" maxX="12" maxY="12"/>
                             <state key="normal" image="btn_icon_menu"/>
@@ -38,24 +35,28 @@
                                 <action selector="didTapMenu" destination="-1" eventType="touchUpInside" id="fxE-1H-FJL"/>
                             </connections>
                         </button>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="キーワードを入力してください" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s8S-9g-igB">
-                            <rect key="frame" x="44" y="0.0" width="260" height="44"/>
+                        <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="キーワードを入力してください" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s8S-9g-igB">
+                            <rect key="frame" x="44" y="0.0" width="258" height="44"/>
                             <animations/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <color key="textColor" red="0.70588235290000001" green="0.70588235290000001" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
+                            <connections>
+                                <outletCollection property="gestureRecognizers" destination="Q6e-Qf-3JM" appends="YES" id="6Xg-LP-KwL"/>
+                            </connections>
                         </label>
                     </subviews>
                     <animations/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstItem="sur-Pz-2V7" firstAttribute="leading" secondItem="U02-rQ-0Fy" secondAttribute="leading" id="5E3-Le-HQd"/>
-                        <constraint firstAttribute="height" constant="44" id="B4N-vv-8gb"/>
-                        <constraint firstItem="s8S-9g-igB" firstAttribute="leading" secondItem="sur-Pz-2V7" secondAttribute="trailing" id="Be3-cA-LUm"/>
-                        <constraint firstAttribute="bottom" secondItem="s8S-9g-igB" secondAttribute="bottom" id="Gmu-WP-5i8"/>
-                        <constraint firstAttribute="trailing" secondItem="s8S-9g-igB" secondAttribute="trailing" constant="8" id="TYO-Qz-NzY"/>
-                        <constraint firstItem="sur-Pz-2V7" firstAttribute="top" secondItem="U02-rQ-0Fy" secondAttribute="top" id="z36-Lc-8ko"/>
-                        <constraint firstItem="s8S-9g-igB" firstAttribute="top" secondItem="U02-rQ-0Fy" secondAttribute="top" id="zSn-0Z-tJb"/>
+                        <constraint firstAttribute="bottom" secondItem="sur-Pz-2V7" secondAttribute="bottom" id="FLy-WM-EPa"/>
+                        <constraint firstItem="s8S-9g-igB" firstAttribute="top" secondItem="U02-rQ-0Fy" secondAttribute="top" id="Gky-vr-OKa"/>
+                        <constraint firstItem="s8S-9g-igB" firstAttribute="leading" secondItem="sur-Pz-2V7" secondAttribute="trailing" id="K87-ne-ajJ"/>
+                        <constraint firstAttribute="height" constant="44" id="MHT-ZR-ibL"/>
+                        <constraint firstAttribute="trailing" secondItem="s8S-9g-igB" secondAttribute="trailing" constant="10" id="RD3-PC-ScV"/>
+                        <constraint firstAttribute="bottom" secondItem="s8S-9g-igB" secondAttribute="bottom" id="qqf-gL-vRJ"/>
+                        <constraint firstItem="sur-Pz-2V7" firstAttribute="leading" secondItem="U02-rQ-0Fy" secondAttribute="leading" id="u5L-dK-dGP"/>
+                        <constraint firstItem="sur-Pz-2V7" firstAttribute="top" secondItem="U02-rQ-0Fy" secondAttribute="top" id="urc-qx-lY7"/>
                     </constraints>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
@@ -75,17 +76,22 @@
             <animations/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="U02-rQ-0Fy" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="4" id="Jcb-kN-1S8"/>
+                <constraint firstItem="U02-rQ-0Fy" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="4" id="0iq-bH-yEN"/>
                 <constraint firstAttribute="bottom" secondItem="uQU-wD-VWJ" secondAttribute="bottom" id="RO2-cU-R0l"/>
                 <constraint firstAttribute="trailing" secondItem="uQU-wD-VWJ" secondAttribute="trailing" id="SMh-Do-D71"/>
-                <constraint firstItem="U02-rQ-0Fy" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="24" id="abk-E1-rA9"/>
+                <constraint firstItem="U02-rQ-0Fy" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="24" id="V0E-0y-upG"/>
+                <constraint firstAttribute="trailing" secondItem="U02-rQ-0Fy" secondAttribute="trailing" constant="4" id="Ye3-pA-Rdn"/>
                 <constraint firstItem="uQU-wD-VWJ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="k3K-R1-PkY"/>
                 <constraint firstItem="uQU-wD-VWJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="kj0-16-Wfv"/>
-                <constraint firstAttribute="trailing" secondItem="U02-rQ-0Fy" secondAttribute="trailing" constant="4" id="rlB-gG-ZXC"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="185" y="259"/>
         </view>
+        <tapGestureRecognizer id="Q6e-Qf-3JM">
+            <connections>
+                <action selector="didTapSearchText" destination="-1" id="SYr-Ce-M6o"/>
+            </connections>
+        </tapGestureRecognizer>
     </objects>
     <resources>
         <image name="btn_icon_menu" width="32" height="32"/>

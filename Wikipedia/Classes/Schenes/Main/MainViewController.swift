@@ -21,4 +21,12 @@ class MainViewController: AppViewController, UITextFieldDelegate
 	{
 		self.slideMenuController()?.openLeft()
 	}
+	
+	@IBAction private func didTapSearchText()
+	{
+		
+		self.presentViewController(SearchViewController(), animated: true) {
+			
+		}
+	}
 }
