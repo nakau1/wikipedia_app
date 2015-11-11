@@ -26,3 +26,17 @@ class SearchViewController: AppViewController
 		}
 	}
 }
+
+class SearchListAdapter : NBTableViewAdapter
+{
+	
+}
+
+class SearchListSection : NBTableViewSection
+{
+	override var rowNumber : Int { get { return 50 } }
+	
+	override func cellClass(row: Int) -> NSObject.Type {
+		return SearchListCell.self
+	}
+}

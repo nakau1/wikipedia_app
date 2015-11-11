@@ -44,11 +44,13 @@
 		CEAB67A31BE2E41B007207AA /* AppImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB67A21BE2E41B007207AA /* AppImage.swift */; };
 		CEB151EB1BF2DE650049387E /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB151E91BF2DE650049387E /* SearchViewController.swift */; };
 		CEB151EC1BF2DE650049387E /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEB151EA1BF2DE650049387E /* SearchViewController.xib */; };
-		CEB7956B1BEF11180027BFAF /* HistoriesListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEB795691BEF0FF10027BFAF /* HistoriesListCell.xib */; };
-		CED28FF31BE22AAA00CFD90D /* FavoritesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED28FF11BE22AAA00CFD90D /* FavoritesListViewController.swift */; };
-		CED28FF41BE22AAA00CFD90D /* FavoritesListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED28FF21BE22AAA00CFD90D /* FavoritesListViewController.xib */; };
-		CED28FF71BE22AB700CFD90D /* HistoriesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED28FF51BE22AB700CFD90D /* HistoriesListViewController.swift */; };
-		CED28FF81BE22AB700CFD90D /* HistoriesListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED28FF61BE22AB700CFD90D /* HistoriesListViewController.xib */; };
+		CEB151F01BF309E40049387E /* NBSlideTabContentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB151EF1BF309E40049387E /* NBSlideTabContentsViewController.swift */; };
+		CEB151F21BF30A250049387E /* NBSlideTabContentsViewController__SAMPLE.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB151F11BF30A250049387E /* NBSlideTabContentsViewController__SAMPLE.swift */; };
+		CEB151FF1BF3209F0049387E /* FavoritesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB151FB1BF3209F0049387E /* FavoritesListViewController.swift */; };
+		CEB152001BF3209F0049387E /* SearchListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEB151FC1BF3209F0049387E /* SearchListCell.xib */; };
+		CEB152011BF3209F0049387E /* HistoriesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB151FD1BF3209F0049387E /* HistoriesListViewController.swift */; };
+		CEB152021BF3209F0049387E /* SuggestListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB151FE1BF3209F0049387E /* SuggestListViewController.swift */; };
+		CEB152041BF320C60049387E /* SearchListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB152031BF320C50049387E /* SearchListCell.swift */; };
 		CED28FFB1BE22AC600CFD90D /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED28FF91BE22AC600CFD90D /* SettingViewController.swift */; };
 		CED28FFC1BE22AC600CFD90D /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED28FFA1BE22AC600CFD90D /* SettingViewController.xib */; };
 		CED28FFF1BE22AD000CFD90D /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED28FFD1BE22AD000CFD90D /* MenuViewController.swift */; };
@@ -127,11 +129,13 @@
 		CEAB67A21BE2E41B007207AA /* AppImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppImage.swift; path = Wikipedia/Classes/Cores/AppImage.swift; sourceTree = "<group>"; };
 		CEB151E91BF2DE650049387E /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchViewController.swift; path = Wikipedia/Classes/Schenes/Search/SearchViewController.swift; sourceTree = "<group>"; };
 		CEB151EA1BF2DE650049387E /* SearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SearchViewController.xib; path = Wikipedia/Classes/Schenes/Search/SearchViewController.xib; sourceTree = "<group>"; };
-		CEB795691BEF0FF10027BFAF /* HistoriesListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HistoriesListCell.xib; path = Wikipedia/Classes/Schenes/HistoriesList/HistoriesListCell.xib; sourceTree = "<group>"; };
-		CED28FF11BE22AAA00CFD90D /* FavoritesListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FavoritesListViewController.swift; path = Wikipedia/Classes/Schenes/FavoritesList/FavoritesListViewController.swift; sourceTree = "<group>"; };
-		CED28FF21BE22AAA00CFD90D /* FavoritesListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FavoritesListViewController.xib; path = Wikipedia/Classes/Schenes/FavoritesList/FavoritesListViewController.xib; sourceTree = "<group>"; };
-		CED28FF51BE22AB700CFD90D /* HistoriesListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistoriesListViewController.swift; path = Wikipedia/Classes/Schenes/HistoriesList/HistoriesListViewController.swift; sourceTree = "<group>"; };
-		CED28FF61BE22AB700CFD90D /* HistoriesListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HistoriesListViewController.xib; path = Wikipedia/Classes/Schenes/HistoriesList/HistoriesListViewController.xib; sourceTree = "<group>"; };
+		CEB151EF1BF309E40049387E /* NBSlideTabContentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NBSlideTabContentsViewController.swift; sourceTree = "<group>"; };
+		CEB151F11BF30A250049387E /* NBSlideTabContentsViewController__SAMPLE.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NBSlideTabContentsViewController__SAMPLE.swift; sourceTree = "<group>"; };
+		CEB151FB1BF3209F0049387E /* FavoritesListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FavoritesListViewController.swift; path = Wikipedia/Classes/Schenes/Search/FavoritesListViewController.swift; sourceTree = "<group>"; };
+		CEB151FC1BF3209F0049387E /* SearchListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SearchListCell.xib; path = Wikipedia/Classes/Schenes/Search/SearchListCell.xib; sourceTree = "<group>"; };
+		CEB151FD1BF3209F0049387E /* HistoriesListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistoriesListViewController.swift; path = Wikipedia/Classes/Schenes/Search/HistoriesListViewController.swift; sourceTree = "<group>"; };
+		CEB151FE1BF3209F0049387E /* SuggestListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SuggestListViewController.swift; path = Wikipedia/Classes/Schenes/Search/SuggestListViewController.swift; sourceTree = "<group>"; };
+		CEB152031BF320C50049387E /* SearchListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchListCell.swift; path = Wikipedia/Classes/Schenes/Search/SearchListCell.swift; sourceTree = "<group>"; };
 		CED28FF91BE22AC600CFD90D /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingViewController.swift; path = Wikipedia/Classes/Schenes/Setting/SettingViewController.swift; sourceTree = "<group>"; };
 		CED28FFA1BE22AC600CFD90D /* SettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SettingViewController.xib; path = Wikipedia/Classes/Schenes/Setting/SettingViewController.xib; sourceTree = "<group>"; };
 		CED28FFD1BE22AD000CFD90D /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuViewController.swift; path = Wikipedia/Classes/Schenes/Menu/MenuViewController.swift; sourceTree = "<group>"; };
@@ -242,6 +246,8 @@
 				CE3768101BE9EE8D0069055F /* NBModel.swift */,
 				CE3767FC1BE9E6150069055F /* NBNotification.swift */,
 				CE3767FD1BE9E6150069055F /* NBReflection.swift */,
+				CEB151EF1BF309E40049387E /* NBSlideTabContentsViewController.swift */,
+				CEB151F11BF30A250049387E /* NBSlideTabContentsViewController__SAMPLE.swift */,
 				CE42F5AC1BEC983F00338D4E /* NBSlideMenuViewController.swift */,
 				CED421221BEDFDDE00F36DA6 /* NBTableViewAdapter.swift */,
 				CE37680E1BE9EC2D0069055F /* NBTimer.swift */,
@@ -264,6 +270,11 @@
 			children = (
 				CEB151E91BF2DE650049387E /* SearchViewController.swift */,
 				CEB151EA1BF2DE650049387E /* SearchViewController.xib */,
+				CEB152031BF320C50049387E /* SearchListCell.swift */,
+				CEB151FC1BF3209F0049387E /* SearchListCell.xib */,
+				CEB151FB1BF3209F0049387E /* FavoritesListViewController.swift */,
+				CEB151FD1BF3209F0049387E /* HistoriesListViewController.swift */,
+				CEB151FE1BF3209F0049387E /* SuggestListViewController.swift */,
 			);
 			name = Search;
 			sourceTree = "<group>";
@@ -275,25 +286,6 @@
 				CED28FFA1BE22AC600CFD90D /* SettingViewController.xib */,
 			);
 			name = Setting;
-			sourceTree = "<group>";
-		};
-		CED28FEE1BE22A3600CFD90D /* FavoritesList */ = {
-			isa = PBXGroup;
-			children = (
-				CED28FF11BE22AAA00CFD90D /* FavoritesListViewController.swift */,
-				CED28FF21BE22AAA00CFD90D /* FavoritesListViewController.xib */,
-			);
-			name = FavoritesList;
-			sourceTree = "<group>";
-		};
-		CED28FEF1BE22A4900CFD90D /* HistoriesList */ = {
-			isa = PBXGroup;
-			children = (
-				CED28FF51BE22AB700CFD90D /* HistoriesListViewController.swift */,
-				CED28FF61BE22AB700CFD90D /* HistoriesListViewController.xib */,
-				CEB795691BEF0FF10027BFAF /* HistoriesListCell.xib */,
-			);
-			name = HistoriesList;
 			sourceTree = "<group>";
 		};
 		CED28FF01BE22A7300CFD90D /* Menu */ = {
@@ -325,8 +317,6 @@
 				CEB151E81BF2DE4E0049387E /* Search */,
 				CED28FF01BE22A7300CFD90D /* Menu */,
 				CED28FED1BE22A2A00CFD90D /* Setting */,
-				CED28FEF1BE22A4900CFD90D /* HistoriesList */,
-				CED28FEE1BE22A3600CFD90D /* FavoritesList */,
 			);
 			name = Scenes;
 			sourceTree = "<group>";
@@ -470,14 +460,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEB7956B1BEF11180027BFAF /* HistoriesListCell.xib in Resources */,
 				CED28FFC1BE22AC600CFD90D /* SettingViewController.xib in Resources */,
 				CEA9FA4F1BDFBB9F00EA245A /* LaunchScreen.storyboard in Resources */,
-				CED28FF81BE22AB700CFD90D /* HistoriesListViewController.xib in Resources */,
 				CED290001BE22AD000CFD90D /* MenuViewController.xib in Resources */,
 				CEA9FA4C1BDFBB9F00EA245A /* Assets.xcassets in Resources */,
+				CEB152001BF3209F0049387E /* SearchListCell.xib in Resources */,
 				CEA9FA4A1BDFBB9F00EA245A /* Main.storyboard in Resources */,
-				CED28FF41BE22AAA00CFD90D /* FavoritesListViewController.xib in Resources */,
 				CEB151EC1BF2DE650049387E /* SearchViewController.xib in Resources */,
 				CEE5FA371BDFC52300D1624E /* MainViewController.xib in Resources */,
 			);
@@ -545,6 +533,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEB152011BF3209F0049387E /* HistoriesListViewController.swift in Sources */,
 				CE77674A1BE9F0BC008C0351 /* ArticleModel.swift in Sources */,
 				CE7767491BE9F0B4008C0351 /* AppModel.swift in Sources */,
 				CEAB67971BE2D735007207AA /* AppEntity.swift in Sources */,
@@ -554,16 +543,17 @@
 				CEAB679D1BE2E2C7007207AA /* AppConfig.swift in Sources */,
 				CEAB67911BE2D3A0007207AA /* ArticleEntity.swift in Sources */,
 				CEE5FA361BDFC52300D1624E /* MainViewController.swift in Sources */,
-				CED28FF71BE22AB700CFD90D /* HistoriesListViewController.swift in Sources */,
 				CEE5FA301BDFC16C00D1624E /* AppViewController.swift in Sources */,
 				CE4236D91BE06425009BB8D3 /* AppApi.swift in Sources */,
 				CEAB679E1BE2E2C7007207AA /* AppConstants.swift in Sources */,
+				CEB151FF1BF3209F0049387E /* FavoritesListViewController.swift in Sources */,
 				CED28FFF1BE22AD000CFD90D /* MenuViewController.swift in Sources */,
 				CEAB67A11BE2E3AA007207AA /* AppCommons.swift in Sources */,
-				CED28FF31BE22AAA00CFD90D /* FavoritesListViewController.swift in Sources */,
 				CEE5FA2B1BDFC02800D1624E /* AppDelegate.swift in Sources */,
 				CED28FFB1BE22AC600CFD90D /* SettingViewController.swift in Sources */,
 				CEAB67A31BE2E41B007207AA /* AppImage.swift in Sources */,
+				CEB152041BF320C60049387E /* SearchListCell.swift in Sources */,
+				CEB152021BF3209F0049387E /* SuggestListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -574,6 +564,7 @@
 				CE37680B1BE9E6150069055F /* NBViewController.swift in Sources */,
 				CE42F5AD1BEC983F00338D4E /* NBSlideMenuViewController.swift in Sources */,
 				CE3768071BE9E6150069055F /* NBLog.swift in Sources */,
+				CEB151F01BF309E40049387E /* NBSlideTabContentsViewController.swift in Sources */,
 				CE3768031BE9E6150069055F /* NBApiRequest.swift in Sources */,
 				CE37680F1BE9EC2D0069055F /* NBTimer.swift in Sources */,
 				CE3768111BE9EE8D0069055F /* NBModel.swift in Sources */,
@@ -584,6 +575,7 @@
 				CE3768081BE9E6150069055F /* NBNotification.swift in Sources */,
 				CED6A8611BF1C2FB00873FC6 /* NB.swift in Sources */,
 				CE3768021BE9E6150069055F /* NBApi.swift in Sources */,
+				CEB151F21BF30A250049387E /* NBSlideTabContentsViewController__SAMPLE.swift in Sources */,
 				CE3768011BE9E6150069055F /* NBAlert.swift in Sources */,
 				CE3768091BE9E6150069055F /* NBReflection.swift in Sources */,
 				CE3768041BE9E6150069055F /* NBApiResponse.swift in Sources */,

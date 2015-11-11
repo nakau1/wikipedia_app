@@ -91,7 +91,7 @@
             </connections>
             <point key="canvasLocation" x="1402" y="528"/>
         </viewController>
-        <viewController id="LSY-fE-cFH" customClass="HistoriesListViewController" customModule="Wikipedia" customModuleProvider="target">
+        <viewController id="LSY-fE-cFH" customClass="SuggestListViewController" customModule="Wikipedia" customModuleProvider="target">
             <layoutGuides>
                 <viewControllerLayoutGuide type="top" id="ORp-nR-Z7W"/>
                 <viewControllerLayoutGuide type="bottom" id="PxM-5g-yjA"/>
@@ -116,7 +116,7 @@
             </connections>
             <point key="canvasLocation" x="964" y="1103"/>
         </viewController>
-        <viewController id="gzX-tC-gbi" customClass="HistoriesListViewController" customModule="Wikipedia" customModuleProvider="target">
+        <viewController id="gzX-tC-gbi" customClass="FavoritesListViewController" customModule="Wikipedia" customModuleProvider="target">
             <layoutGuides>
                 <viewControllerLayoutGuide type="top" id="NtT-0A-Dje"/>
                 <viewControllerLayoutGuide type="bottom" id="wmA-Cc-aha"/>
