@@ -26,6 +26,7 @@
 		CE4236D91BE06425009BB8D3 /* AppApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4236D81BE06425009BB8D3 /* AppApi.swift */; };
 		CE7767491BE9F0B4008C0351 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3768121BE9EF670069055F /* AppModel.swift */; };
 		CE77674A1BE9F0BC008C0351 /* ArticleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3768151BE9EFAB0069055F /* ArticleModel.swift */; };
+		CE83F6D11BF4314E00226A45 /* NBNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE83F6D01BF4314E00226A45 /* NBNumber.swift */; };
 		CEA9FA4A1BDFBB9F00EA245A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA9FA481BDFBB9F00EA245A /* Main.storyboard */; };
 		CEA9FA4C1BDFBB9F00EA245A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEA9FA4B1BDFBB9F00EA245A /* Assets.xcassets */; };
 		CEA9FA4F1BDFBB9F00EA245A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA9FA4D1BDFBB9F00EA245A /* LaunchScreen.storyboard */; };
@@ -101,6 +102,7 @@
 		CE3768121BE9EF670069055F /* AppModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppModel.swift; path = Wikipedia/Classes/Bases/AppModel.swift; sourceTree = "<group>"; };
 		CE3768151BE9EFAB0069055F /* ArticleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArticleModel.swift; path = Wikipedia/Classes/Models/ArticleModel.swift; sourceTree = "<group>"; };
 		CE4236D81BE06425009BB8D3 /* AppApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppApi.swift; path = Wikipedia/Classes/API/AppApi.swift; sourceTree = "<group>"; };
+		CE83F6D01BF4314E00226A45 /* NBNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NBNumber.swift; sourceTree = "<group>"; };
 		CEA9FA411BDFBB9F00EA245A /* Wikipedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wikipedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEA9FA491BDFBB9F00EA245A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CEA9FA4B1BDFBB9F00EA245A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -228,6 +230,7 @@
 				CE3767FB1BE9E6150069055F /* NBLog.swift */,
 				CE3768101BE9EE8D0069055F /* NBModel.swift */,
 				CE3767FC1BE9E6150069055F /* NBNotification.swift */,
+				CE83F6D01BF4314E00226A45 /* NBNumber.swift */,
 				CE3767FD1BE9E6150069055F /* NBReflection.swift */,
 				CE37680E1BE9EC2D0069055F /* NBTimer.swift */,
 				CE3767FE1BE9E6150069055F /* NBView.swift */,
@@ -544,6 +547,7 @@
 			files = (
 				CE37680B1BE9E6150069055F /* NBViewController.swift in Sources */,
 				CE3768071BE9E6150069055F /* NBLog.swift in Sources */,
+				CE83F6D11BF4314E00226A45 /* NBNumber.swift in Sources */,
 				CE3768031BE9E6150069055F /* NBApiRequest.swift in Sources */,
 				CE37680F1BE9EC2D0069055F /* NBTimer.swift in Sources */,
 				CE3768111BE9EE8D0069055F /* NBModel.swift in Sources */,
