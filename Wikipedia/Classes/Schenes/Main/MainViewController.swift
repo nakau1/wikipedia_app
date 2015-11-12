@@ -11,5 +11,9 @@ class MainViewController: AppViewController
 	override func viewDidLoad()
 	{
 		super.viewDidLoad()
+		
+		let d = "2015-11-12".toNSDate("yyyy-MM-dd")
+		D(NSDate().compare(d!))
 	}
 }
+
