@@ -14,7 +14,8 @@ class MainViewController: AppViewController, UITextFieldDelegate
 	{
 		super.viewDidLoad()
 		
-		webview.loadRequest(NSURLRequest(URL: NSURL(string: "https://translate.google.co.jp/")!))
+		webview.hidden = true
+		//webview.loadRequest(NSURLRequest(URL: NSURL(string: "https://translate.google.co.jp/")!))
 	}
 	
 	@IBAction private func didTapMenu()

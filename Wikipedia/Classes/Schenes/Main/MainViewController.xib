@@ -15,6 +15,10 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wikipedia_logo" translatesAutoresizingMaskIntoConstraints="NO" id="50L-kb-R6f">
+                    <rect key="frame" x="60" y="209" width="200" height="134"/>
+                    <animations/>
+                </imageView>
                 <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uQU-wD-VWJ">
                     <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                     <animations/>
@@ -74,13 +78,15 @@
                 </view>
             </subviews>
             <animations/>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="U02-rQ-0Fy" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="4" id="0iq-bH-yEN"/>
+                <constraint firstItem="50L-kb-R6f" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="36" id="6Rv-yl-rRi"/>
                 <constraint firstAttribute="bottom" secondItem="uQU-wD-VWJ" secondAttribute="bottom" id="RO2-cU-R0l"/>
                 <constraint firstAttribute="trailing" secondItem="uQU-wD-VWJ" secondAttribute="trailing" id="SMh-Do-D71"/>
                 <constraint firstItem="U02-rQ-0Fy" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="24" id="V0E-0y-upG"/>
                 <constraint firstAttribute="trailing" secondItem="U02-rQ-0Fy" secondAttribute="trailing" constant="4" id="Ye3-pA-Rdn"/>
+                <constraint firstItem="50L-kb-R6f" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ct5-s5-W75"/>
                 <constraint firstItem="uQU-wD-VWJ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="k3K-R1-PkY"/>
                 <constraint firstItem="uQU-wD-VWJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="kj0-16-Wfv"/>
             </constraints>
@@ -94,6 +100,7 @@
         </tapGestureRecognizer>
     </objects>
     <resources>
-        <image name="btn_icon_menu" width="32" height="32"/>
+        <image name="btn_icon_menu" width="30" height="30"/>
+        <image name="wikipedia_logo" width="200" height="134"/>
     </resources>
 </document>
