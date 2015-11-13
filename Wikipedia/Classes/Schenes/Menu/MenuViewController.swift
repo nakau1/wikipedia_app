@@ -14,6 +14,7 @@ class MenuViewController: AppViewController
 		case Prev
 		case Next
 		case Safari
+		case Twitter
 		case Setting
 		case Clear
 		case Bookmarks
@@ -26,10 +27,11 @@ class MenuViewController: AppViewController
 				case Prev:      return (icon: .Prev,     title: "前の記事に戻る")
 				case Next:      return (icon: .Next,     title: "次の記事に進む")
 				case Safari:    return (icon: .Safari,   title: "現在の記事をSafariで開く")
+				case Twitter:   return (icon: .Twitter,  title: "Twitterでつぶやく")
 				case Setting:   return (icon: .Setting,  title: "各種設定")
-				case Clear:     return (icon: .Suggest,  title: "記事のクリア")
+				case Clear:     return (icon: .Trash,    title: "記事のクリア")
 				case Bookmarks: return (icon: .Bookmark, title: "ブックマークの管理")
-				case AboutMe:   return (icon: .Suggest,  title: "このアプリについて")
+				case AboutMe:   return (icon: .Info,     title: "このアプリについて")
 				}
 			}
 		}
@@ -75,6 +77,12 @@ class MenuViewController: AppViewController
 		// TODO: 未実装
 	}
 	
+	// "Twitterでつぶやく"押下時
+	func didTapTwitter()
+	{
+		// TODO: 未実装
+	}
+	
 	// "各種設定"押下時
 	func didTapSetting()
 	{
@@ -108,6 +116,7 @@ class MenuViewController: AppViewController
 				.Prev,
 				.Next,
 				.Safari,
+				.Twitter,
 				.Setting,
 				.Clear,
 				.Bookmarks,
@@ -142,7 +151,7 @@ class MenuViewController: AppViewController
 	private func makeButton(criteriaFrame f: CGRect, offsetY: CGFloat, item: Item) -> UIButton
 	{
 		var frame = f
-		frame.size.height = 50.0
+		frame.size.height = 64.0
 		frame.origin.y = offsetY
 		
 		let ret = UIButton(type: .Custom)

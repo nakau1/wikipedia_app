@@ -10,19 +10,19 @@ class AppImage
 	enum ButtonIcon : String
 	{
 		case Bookmark = "btn_icon_bookmark"
+		case Close    = "btn_icon_close"
+		case Delete   = "btn_icon_delete"
 		case History  = "btn_icon_history"
+		case Info     = "btn_icon_info"
 		case Menu     = "btn_icon_menu"
 		case Next     = "btn_icon_next"
 		case Prev     = "btn_icon_prev"
 		case Reload   = "btn_icon_reload"
 		case Safari   = "btn_icon_safari"
-		case Search   = "btn_icon_search"
 		case Setting  = "btn_icon_setting"
 		case Suggest  = "btn_icon_suggest"
-		case Close    = "btn_icon_close"
-		
-//		case Menu = "btn_icon_menu"
-//		case Menu = "btn_icon_menu"
+		case Trash    = "btn_icon_trash"
+		case Twitter  = "btn_icon_twitter"
 	}
 	
 	/// ON/OFFの切り替えがある画像素材
