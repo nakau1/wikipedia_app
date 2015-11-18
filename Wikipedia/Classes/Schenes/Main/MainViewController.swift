@@ -6,19 +6,33 @@ import UIKit
 import TemporaryLibrary
 
 /// メイン画面ビューコントローラ
-class MainViewController: AppViewController
+class MainViewController: AppViewController, NBKeyboardDelegate
 {
+	var kb = NBKeyboard()
+	
+	@IBOutlet private weak var v : UIView!
+	
 	override func viewDidLoad()
 	{
 		super.viewDidLoad()
-		
-		
-		
-		for k in NSDate.date(month:9).datesForCalendarInMonth() {
-			D("\(k.toString())(\(k.isUsualDay))")
-		}
-		
-//		D(NSDate().dateAddedYear(-2)?.toString(NSDate.FormatHIS))
+	}
+	
+	override func viewWillAppear(animated: Bool)
+	{
+		super.viewWillAppear(animated)
+		self.kb.delegate = self
+		self.kb.start()
+	}
+	
+	override func viewWillDisappear(animated: Bool)
+	{
+		super.viewWillDisappear(animated)
+		self.kb.stop()
+	}
+	
+	func keyboardChangeFrameAnimation(distance: CGFloat)
+	{
+		v.frame.origin.y += distance
 	}
 }
 
